@@ -1,0 +1,230 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useLanguage } from '@/lib/language'
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const { lang, setLang, t, dir } = useLanguage()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const navItems = [
+    {
+      label: t('nav.products'),
+      href: '/products',
+    },
+    {
+      label: t('nav.systems'),
+      href: '/systems',
+    },
+    {
+      label: t('nav.specs'),
+      href: '/specs',
+    },
+    {
+      label: t('nav.projects'),
+      href: '/projects',
+    },
+    {
+      label: t('nav.about'),
+      href: '/about',
+    },
+  ]
+
+  const isActive = (href: string) => pathname === href
+
+  return (
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? 'glass-dark shadow-nav border-b border-white/10'
+          : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div className={`flex ${dir === 'rtl' ? 'flex-row-reverse' : ''} justify-between items-center h-20`}>
+          <Link 
+            href="/" 
+            className="flex-shrink-0 group relative"
+          >
+            <motion.h1 
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+              className="text-2xl md:text-3xl font-bold text-white tracking-tight"
+            >
+              GLAZE<span className="text-accent relative">
+                //
+                <span className="absolute inset-0 blur-sm opacity-50">//</span>
+              </span>PRO
+            </motion.h1>
+          </Link>
+
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center gap-2">
+            {navItems.map((item, idx) => (
+              <motion.div
+                key={item.label}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.1 + 0.3 }}
+                className="relative"
+              >
+                <Link
+                  href={item.href}
+                  className={`relative px-5 py-2.5 rounded-xl transition-all duration-300 group ${
+                    isActive(item.href)
+                      ? 'text-accent bg-white/10 shadow-lg shadow-accent/20'
+                      : 'text-white/90 hover:text-white hover:bg-white/5'
+                  }`}
+                >
+                  <span className="relative z-10 font-medium">{item.label}</span>
+                  {isActive(item.href) && (
+                    <motion.div
+                      layoutId="activeNav"
+                      className="absolute inset-0 bg-gradient-to-r from-accent/20 to-transparent rounded-xl"
+                      initial={false}
+                      transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
+                    />
+                  )}
+                  {!isActive(item.href) && (
+                    <span className="absolute inset-0 rounded-xl bg-white/0 group-hover:bg-white/5 transition-colors duration-300" />
+                  )}
+                </Link>
+              </motion.div>
+            ))}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+            >
+              <button
+                onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
+                className="ml-2 px-4 py-2.5 rounded-xl text-white/90 hover:text-white hover:bg-white/10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent font-medium"
+                aria-label="Toggle language"
+              >
+                {lang === 'en' ? 'العربية' : 'English'}
+              </button>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+            >
+              <Link
+                href="/contact"
+                className="ml-2 bg-accent hover:bg-accent/90 text-ink px-6 py-2.5 rounded-xl font-semibold transition-all duration-300 shadow-lg shadow-accent/30 hover:shadow-accent/40 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+              >
+                {t('nav.rfq')}
+              </Link>
+            </motion.div>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <motion.button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            whileTap={{ scale: 0.95 }}
+            className="lg:hidden text-white p-3 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-accent rounded-xl transition-colors"
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {mobileMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </motion.button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="lg:hidden glass-dark border-t border-white/10 backdrop-blur-xl"
+          >
+            <div className="px-6 py-6 space-y-3">
+              {navItems.map((item, idx) => (
+                <motion.div
+                  key={item.label}
+                  initial={{ opacity: 0, x: dir === 'rtl' ? 20 : -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.1 }}
+                >
+                  <Link
+                    href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block px-5 py-3 rounded-xl transition-all duration-200 ${
+                      isActive(item.href)
+                        ? 'text-accent bg-white/10 font-semibold'
+                        : 'text-white/90 hover:text-white hover:bg-white/5'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                </motion.div>
+              ))}
+              <motion.div
+                initial={{ opacity: 0, x: dir === 'rtl' ? 20 : -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: navItems.length * 0.1 }}
+                className="pt-4 border-t border-white/10 space-y-3"
+              >
+                <button
+                  onClick={() => {
+                    setLang(lang === 'en' ? 'ar' : 'en')
+                    setMobileMenuOpen(false)
+                  }}
+                  className="block w-full px-5 py-3 rounded-xl text-white/90 hover:text-white hover:bg-white/10 text-center font-medium transition-all duration-200"
+                >
+                  {lang === 'en' ? 'العربية' : 'English'}
+                </button>
+                <Link
+                  href="/contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block bg-accent hover:bg-accent/90 text-ink px-6 py-3 rounded-xl font-semibold text-center shadow-lg shadow-accent/30 transition-all duration-200"
+                >
+                  {t('nav.rfq')}
+                </Link>
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.nav>
+  )
+}

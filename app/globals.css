@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 11, 16, 32; /* ink */
+  --background-end-rgb: 15, 18, 34; /* paper */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    );
+  min-height: 100vh;
+}
+
+/* Enhanced spacing for better visual hierarchy */
+main {
+  padding-top: 5rem; /* Account for fixed navbar (80px / 16 = 5rem) */
+}
+
+/* Default section padding - responsive and generous */
+section {
+  padding: 4rem 1.5rem; /* 64px vertical, 24px horizontal on mobile */
+}
+
+/* Hero sections can override with pt-0 */
+section.pt-0 {
+  padding-top: 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 6rem 2rem; /* 96px vertical, 32px horizontal on tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 8rem 2.5rem; /* 128px vertical, 40px horizontal on desktop */
+  }
+  
+  /* Extra spacing for key sections on large screens */
+  section.key-section {
+    padding: 10rem 3rem; /* 160px vertical, 48px horizontal */
+  }
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Focus states for accessibility */
+*:focus-visible {
+  outline: 2px solid theme('colors.accent');
+  outline-offset: 2px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

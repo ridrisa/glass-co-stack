@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow staging/admin areas if applicable
+# Disallow: /admin/
+# Disallow: /api/
+
+Sitemap: https://your-domain.com/sitemap.xml
+
