@@ -78,10 +78,10 @@ export default function ProductsPage() {
           <motion.h1 {...fadeUp} className="text-3xl md:text-5xl font-bold text-white mb-4">
             {t('products.title')}
           </motion.h1>
-          <motion.p {...fadeUp} className="text-slate-700 mt-2 max-w-3xl text-lg mb-6">
+          <motion.p {...fadeUp} className="text-slate-300 mt-2 max-w-3xl text-lg mb-6">
             {t('products.subtitle')}
           </motion.p>
-          <motion.p {...fadeUp} className="text-slate-600 max-w-3xl mb-6">
+          <motion.p {...fadeUp} className="text-slate-400 max-w-3xl mb-6">
             {lang === 'en'
               ? 'Performance data optimized for Saudi Arabia\'s climate and solar conditions. All values are indicative unless a project-specific specification is issued. Products certified to SBC standards for seamless integration with Vision 2030 projects.'
               : 'بيانات الأداء محسّنة لمناخ المملكة وظروفها الشمسية. جميع القيم مؤشرية ما لم يتم إصدار مواصفات خاصة بالمشروع. المنتجات معتمدة وفق معايير الكود السعودي للبناء للتكامل السلس مع مشاريع رؤية 2030.'}
@@ -106,20 +106,20 @@ export default function ProductsPage() {
                   <div className="text-xl font-semibold text-white mb-3">
                     {lang === 'en' ? p.nameEn : p.nameAr}
                   </div>
-                  <div className="text-slate-700 mb-4 flex-1">
+                  <div className="text-slate-300 mb-4 flex-1">
                     {lang === 'en' ? p.factsEn : p.factsAr}
                   </div>
                   <div className="pt-4 border-t border-slate-200 space-y-2">
                     <div className="flex justify-between text-sm">
-                      <span className="text-slate-600">{lang === 'en' ? 'U-value:' : 'قيمة U:'}</span>
+                      <span className="text-slate-400">{lang === 'en' ? 'U-value:' : 'قيمة U:'}</span>
                       <span className="text-accent font-medium">{p.uValue}</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-slate-600">{lang === 'en' ? 'SHGC:' : 'SHGC:'}</span>
+                      <span className="text-slate-400">{lang === 'en' ? 'SHGC:' : 'SHGC:'}</span>
                       <span className="text-accent font-medium">{p.shgc}</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-slate-600">{lang === 'en' ? 'LT:' : 'نقل الضوء:'}</span>
+                      <span className="text-slate-400">{lang === 'en' ? 'LT:' : 'نقل الضوء:'}</span>
                       <span className="text-accent font-medium">{p.lt}</span>
                     </div>
                   </div>

@@ -68,7 +68,7 @@ export default function QualityCommitment() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t('quality.title')}
           </h2>
-          <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+          <p className="text-slate-400 text-lg max-w-3xl mx-auto">
             {t('quality.subtitle')}
           </p>
         </motion.div>
@@ -112,7 +112,7 @@ export default function QualityCommitment() {
                 </h3>
                 <ul className="space-y-2">
                   {commitment.points.map((point) => (
-                    <li key={point} className="flex items-start gap-2 text-slate-600">
+                    <li key={point} className="flex items-start gap-2 text-slate-400">
                       <span className="text-accent mt-1">✓</span>
                       <span>{point}</span>
                     </li>

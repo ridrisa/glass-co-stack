@@ -80,7 +80,7 @@ export default function RefractionCard({
         style={{ transform: 'translateZ(40px)' }}
       >
         <div className="text-white font-semibold text-lg">{title}</div>
-        {subtitle && <div className="text-slate-700 text-sm mt-1">{subtitle}</div>}
+        {subtitle && <div className="text-slate-300 text-sm mt-1">{subtitle}</div>}
       </figcaption>
       
       {/* 3D Glare Effect */}

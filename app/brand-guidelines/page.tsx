@@ -54,7 +54,7 @@ export default function BrandGuidelinesPage() {
             <p className="text-3xl text-accent font-medium italic mb-8">
               Brand Architecture & Design System
             </p>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
               Comprehensive guidelines for maintaining brand consistency across all touchpoints.
               Combining Madarek-level engineering precision with Pure Glass aesthetic excellence.
             </p>
@@ -69,19 +69,19 @@ export default function BrandGuidelinesPage() {
           >
             <div className="glass p-6 rounded-2xl text-center">
               <div className="text-4xl font-bold text-accent mb-2">3</div>
-              <div className="text-sm text-slate-600">Core Colors</div>
+              <div className="text-sm text-slate-400">Core Colors</div>
             </div>
             <div className="glass p-6 rounded-2xl text-center">
               <div className="text-4xl font-bold text-saudi-green mb-2">3</div>
-              <div className="text-sm text-slate-600">Font Families</div>
+              <div className="text-sm text-slate-400">Font Families</div>
             </div>
             <div className="glass p-6 rounded-2xl text-center">
               <div className="text-4xl font-bold text-desert-gold mb-2">12</div>
-              <div className="text-sm text-slate-600">Type Scales</div>
+              <div className="text-sm text-slate-400">Type Scales</div>
             </div>
             <div className="glass p-6 rounded-2xl text-center">
               <div className="text-4xl font-bold text-accent mb-2">4</div>
-              <div className="text-sm text-slate-600">Motion Presets</div>
+              <div className="text-sm text-slate-400">Motion Presets</div>
             </div>
           </motion.div>
         </div>
@@ -101,7 +101,7 @@ export default function BrandGuidelinesPage() {
                 className={`px-6 py-3 rounded-xl whitespace-nowrap transition-all duration-300 ${
                   activeSection === section.id
                     ? 'bg-accent text-white font-semibold'
-                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                    : 'text-slate-400 hover:text-white hover:bg-slate-100'
                 }`}
               >
                 <span className="mr-2">{section.icon}</span>
@@ -129,7 +129,7 @@ export default function BrandGuidelinesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="glass p-8 rounded-2xl">
                 <h3 className="text-2xl font-bold text-white mb-4">Brand Essence</h3>
-                <p className="text-slate-700 leading-relaxed mb-6">
+                <p className="text-slate-300 leading-relaxed mb-6">
                   GLAZE//PRO is Saudi Arabia's premier architectural glazing systems company —
                   combining Madarek-level engineering precision with Pure Glass aesthetic excellence.
                 </p>
@@ -147,7 +147,7 @@ export default function BrandGuidelinesPage() {
 
               <div className="glass p-8 rounded-2xl">
                 <h3 className="text-2xl font-bold text-white mb-4">Brand Pillars</h3>
-                <ul className="space-y-3 text-slate-700">
+                <ul className="space-y-3 text-slate-300">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1">//</span>
                     <span><strong className="text-white">Precision Engineering:</strong> Technical excellence backed by data</span>
@@ -171,7 +171,7 @@ export default function BrandGuidelinesPage() {
             {/* UVP */}
             <div className="glass-blue p-10 rounded-2xl border-2 border-accent/30">
               <h3 className="text-2xl font-bold text-white mb-4">Unique Value Proposition</h3>
-              <p className="text-xl text-slate-800 leading-relaxed italic">
+              <p className="text-xl text-white leading-relaxed italic">
                 "The only Saudi glazing company that combines Madarek-level engineering precision
                 with Pure Glass aesthetic excellence — delivering Vision 2030-ready architectural
                 glass systems from design to installation."
@@ -202,7 +202,7 @@ export default function BrandGuidelinesPage() {
               <span className="text-accent">//</span>
               Color System
             </h2>
-            <p className="text-xl text-slate-600 mb-12">
+            <p className="text-xl text-slate-400 mb-12">
               Saudi-optimized color palette combining technical precision with cultural relevance.
             </p>
 
@@ -223,7 +223,7 @@ export default function BrandGuidelinesPage() {
               <span className="text-accent">//</span>
               Typography System
             </h2>
-            <p className="text-xl text-slate-600 mb-12">
+            <p className="text-xl text-slate-400 mb-12">
               Bilingual type system optimized for both Latin (English) and Arabic scripts.
             </p>
 
@@ -242,7 +242,7 @@ export default function BrandGuidelinesPage() {
               <span className="text-accent">//</span>
               Animation System
             </h2>
-            <p className="text-xl text-slate-600 mb-12">
+            <p className="text-xl text-slate-400 mb-12">
               Subtle, purposeful motion that enhances user experience without distraction.
             </p>
 
@@ -261,7 +261,7 @@ export default function BrandGuidelinesPage() {
               <span className="text-accent">//</span>
               Component Library
             </h2>
-            <p className="text-xl text-slate-600 mb-12">
+            <p className="text-xl text-slate-400 mb-12">
               Reusable UI components built with brand architecture principles.
             </p>
 
@@ -299,13 +299,13 @@ export default function BrandGuidelinesPage() {
                 <h3 className="text-2xl font-bold text-white mb-6">Glass Cards</h3>
                 <div className="space-y-4">
                   <div className="glass p-4 rounded-xl">
-                    <p className="text-sm text-slate-600">Standard Glass Card</p>
+                    <p className="text-sm text-slate-400">Standard Glass Card</p>
                   </div>
                   <div className="glass-light p-4 rounded-xl">
-                    <p className="text-sm text-slate-600">Light Glass Card</p>
+                    <p className="text-sm text-slate-400">Light Glass Card</p>
                   </div>
                   <div className="glass-blue p-4 rounded-xl">
-                    <p className="text-sm text-slate-600">Blue Tint Glass Card</p>
+                    <p className="text-sm text-slate-400">Blue Tint Glass Card</p>
                   </div>
                 </div>
                 <pre className="text-xs text-slate-400 font-mono mt-6 p-4 bg-ink/50 rounded overflow-x-auto">
@@ -342,7 +342,7 @@ export default function BrandGuidelinesPage() {
               <div className="glass p-8 rounded-2xl text-center">
                 <div className="text-5xl mb-4">📄</div>
                 <h3 className="text-xl font-bold text-white mb-2">Brand Architecture</h3>
-                <p className="text-sm text-slate-600 mb-6">
+                <p className="text-sm text-slate-400 mb-6">
                   Complete brand guidelines PDF
                 </p>
                 <button className="btn-secondary w-full">
@@ -353,7 +353,7 @@ export default function BrandGuidelinesPage() {
               <div className="glass p-8 rounded-2xl text-center">
                 <div className="text-5xl mb-4">🎨</div>
                 <h3 className="text-xl font-bold text-white mb-2">Design Assets</h3>
-                <p className="text-sm text-slate-600 mb-6">
+                <p className="text-sm text-slate-400 mb-6">
                   Logo files, color palettes, fonts
                 </p>
                 <button className="btn-secondary w-full">
@@ -364,7 +364,7 @@ export default function BrandGuidelinesPage() {
               <div className="glass p-8 rounded-2xl text-center">
                 <div className="text-5xl mb-4">💻</div>
                 <h3 className="text-xl font-bold text-white mb-2">Component Code</h3>
-                <p className="text-sm text-slate-600 mb-6">
+                <p className="text-sm text-slate-400 mb-6">
                   React/Tailwind component library
                 </p>
                 <button className="btn-secondary w-full">
@@ -382,7 +382,7 @@ export default function BrandGuidelinesPage() {
           <h2 className="text-5xl font-bold text-white mb-6">
             Questions About Our Brand?
           </h2>
-          <p className="text-xl text-slate-600 mb-12">
+          <p className="text-xl text-slate-400 mb-12">
             Contact our marketing team for brand usage approvals and support.
           </p>
           <div className="flex gap-4 justify-center">

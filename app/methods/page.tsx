@@ -60,7 +60,7 @@ export default function MethodsPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Our Methods
             </h1>
-            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               Proven methodologies delivering exceptional results
             </p>
           </div>
@@ -71,12 +71,12 @@ export default function MethodsPage() {
                 <h2 className="text-2xl font-semibold text-white mb-4">
                   {method.title}
                 </h2>
-                <p className="text-slate-700 mb-6 leading-relaxed">
+                <p className="text-slate-300 mb-6 leading-relaxed">
                   {method.description}
                 </p>
                 <ul className="space-y-3">
                   {method.details.map((detail, i) => (
-                    <li key={i} className="flex items-start text-slate-600">
+                    <li key={i} className="flex items-start text-slate-400">
                       <svg
                         className="w-5 h-5 text-accent mr-3 flex-shrink-0 mt-0.5"
                         fill="none"

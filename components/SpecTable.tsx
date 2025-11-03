@@ -138,11 +138,11 @@ export default function SpecTable({ specs, title = 'Performance Specifications' 
                 className="border-b border-slate-200 hover:bg-slate-50 transition-colors"
               >
                 <td className="px-4 py-3 text-white font-medium">{spec.name}</td>
-                <td className="px-4 py-3 text-slate-700">{spec.thickness}</td>
+                <td className="px-4 py-3 text-slate-300">{spec.thickness}</td>
                 <td className="px-4 py-3 text-accent font-semibold">{spec.uvValue.toFixed(2)}</td>
-                <td className="px-4 py-3 text-slate-700">{spec.shgc.toFixed(2)}</td>
-                <td className="px-4 py-3 text-slate-700">{(spec.lt * 100).toFixed(1)}%</td>
-                <td className="px-4 py-3 text-slate-700">
+                <td className="px-4 py-3 text-slate-300">{spec.shgc.toFixed(2)}</td>
+                <td className="px-4 py-3 text-slate-300">{(spec.lt * 100).toFixed(1)}%</td>
+                <td className="px-4 py-3 text-slate-300">
                   {spec.stc && spec.rw ? `${spec.stc} / ${spec.rw} dB` : '-'}
                 </td>
               </motion.tr>

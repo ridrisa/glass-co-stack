@@ -93,7 +93,7 @@ export default function Navbar() {
             <motion.h1 
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
-              className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight"
+              className="text-2xl md:text-3xl font-bold text-white tracking-tight"
             >
               GLAZE<span className="text-accent relative">
                 //
@@ -125,7 +125,7 @@ export default function Navbar() {
                   className={`relative px-5 py-2.5 rounded-xl transition-all duration-300 group flex items-center gap-1 ${
                     isActive(item.href)
                       ? 'text-accent bg-slate-100 shadow-lg shadow-accent/20'
-                      : 'text-slate-800 hover:text-slate-900 hover:bg-slate-50'
+                      : 'text-slate-300 hover:text-white hover:bg-slate-800/30'
                   }`}
                 >
                   <span className="relative z-10 font-medium">{item.label}</span>
@@ -164,7 +164,7 @@ export default function Navbar() {
                             href={product.href}
                             className="block px-4 py-3 rounded-lg hover:bg-slate-100 transition-colors group"
                           >
-                            <div className="font-medium text-slate-900 group-hover:text-accent transition-colors">
+                            <div className="font-medium text-white group-hover:text-accent transition-colors">
                               {product.name}
                             </div>
                             <div className="text-xs text-slate-500 mt-0.5">{product.desc}</div>
@@ -189,7 +189,7 @@ export default function Navbar() {
                             href={system.href}
                             className="block px-4 py-3 rounded-lg hover:bg-slate-100 transition-colors group"
                           >
-                            <div className="font-medium text-slate-900 group-hover:text-accent transition-colors">
+                            <div className="font-medium text-white group-hover:text-accent transition-colors">
                               {system.name}
                             </div>
                             <div className="text-xs text-slate-500 mt-0.5">{system.desc}</div>
@@ -208,7 +208,7 @@ export default function Navbar() {
             >
               <button
                 onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
-                className="ml-2 px-4 py-2.5 rounded-xl text-slate-800 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent font-medium"
+                className="ml-2 px-4 py-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/30 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent font-medium"
                 aria-label="Toggle language"
               >
                 {lang === 'en' ? 'العربية' : 'English'}
@@ -221,7 +221,7 @@ export default function Navbar() {
             >
               <Link
                 href="/contact"
-                className="ml-2 bg-accent hover:bg-accent/90 text-slate-900 px-6 py-2.5 rounded-xl font-semibold transition-all duration-300 shadow-lg shadow-accent/30 hover:shadow-accent/40 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+                className="ml-2 bg-accent hover:bg-accent/90 text-white px-6 py-2.5 rounded-xl font-semibold transition-all duration-300 shadow-lg shadow-accent/30 hover:shadow-accent/40 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
               >
                 {t('nav.rfq')}
               </Link>
@@ -232,7 +232,7 @@ export default function Navbar() {
           <motion.button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             whileTap={{ scale: 0.95 }}
-            className="lg:hidden text-slate-900 p-3 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-accent rounded-xl transition-colors"
+            className="lg:hidden text-white p-3 hover:bg-slate-800/30 focus:outline-none focus:ring-2 focus:ring-accent rounded-xl transition-colors"
             aria-label="Toggle menu"
           >
             <svg
@@ -285,7 +285,7 @@ export default function Navbar() {
                     className={`block px-5 py-3 rounded-xl transition-all duration-200 ${
                       isActive(item.href)
                         ? 'text-accent bg-slate-100 font-semibold'
-                        : 'text-slate-800 hover:text-slate-900 hover:bg-slate-50'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800/30'
                     }`}
                   >
                     {item.label}
@@ -303,14 +303,14 @@ export default function Navbar() {
                     setLang(lang === 'en' ? 'ar' : 'en')
                     setMobileMenuOpen(false)
                   }}
-                  className="block w-full px-5 py-3 rounded-xl text-slate-800 hover:text-slate-900 hover:bg-slate-100 text-center font-medium transition-all duration-200"
+                  className="block w-full px-5 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/30 text-center font-medium transition-all duration-200"
                 >
                   {lang === 'en' ? 'العربية' : 'English'}
                 </button>
                 <Link
                   href="/contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block bg-accent hover:bg-accent/90 text-slate-900 px-6 py-3 rounded-xl font-semibold text-center shadow-lg shadow-accent/30 transition-all duration-200"
+                  className="block bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-xl font-semibold text-center shadow-lg shadow-accent/30 transition-all duration-200"
                 >
                   {t('nav.rfq')}
                 </Link>

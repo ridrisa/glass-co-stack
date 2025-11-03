@@ -86,7 +86,7 @@ export default function HeroShowcase({
           {ctaHref ? (
             <Link
               href={ctaHref}
-              className="inline-block mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-slate-900 shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+              className="inline-block mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-white shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
               aria-label={ctaText}
             >
               {ctaText}
@@ -94,7 +94,7 @@ export default function HeroShowcase({
           ) : (
             <button
               onClick={handleCta}
-              className="mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-slate-900 shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+              className="mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-white shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
               aria-label={ctaText}
             >
               {ctaText}
@@ -117,7 +117,7 @@ export default function HeroShowcase({
                 {kpi.value}
                 {kpi.suffix && <span className="text-2xl">{kpi.suffix}</span>}
               </div>
-              <div className="text-sm text-slate-600 mt-1">{kpi.label}</div>
+              <div className="text-sm text-slate-400 mt-1">{kpi.label}</div>
             </div>
           ))}
         </motion.div>

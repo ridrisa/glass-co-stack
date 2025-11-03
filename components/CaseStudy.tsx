@@ -60,11 +60,11 @@ export default function CaseStudy({ caseStudy }: Props) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/50 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-8">
-            <div className="text-sm text-slate-700 mb-2">{caseStudy.sector}</div>
+            <div className="text-sm text-slate-300 mb-2">{caseStudy.sector}</div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               {caseStudy.title}
             </h1>
-            <div className="flex flex-wrap gap-6 text-slate-800">
+            <div className="flex flex-wrap gap-6 text-white">
               <div>{caseStudy.location}</div>
               {caseStudy.year && <div>Completed {caseStudy.year}</div>}
               {caseStudy.client && <div>Client: {caseStudy.client}</div>}
@@ -92,7 +92,7 @@ export default function CaseStudy({ caseStudy }: Props) {
               <div className="text-2xl md:text-3xl font-bold text-accent mb-1">
                 {metric.value}
               </div>
-              <div className="text-sm text-slate-600">{metric.label}</div>
+              <div className="text-sm text-slate-400">{metric.label}</div>
             </div>
           ))}
         </motion.div>
@@ -107,7 +107,7 @@ export default function CaseStudy({ caseStudy }: Props) {
       >
         <h2 className="text-3xl font-semibold text-white mb-4">The Challenge</h2>
         <div className="glass rounded-xl p-8">
-          <p className="text-slate-800 text-lg leading-relaxed">{caseStudy.problem}</p>
+          <p className="text-white text-lg leading-relaxed">{caseStudy.problem}</p>
         </div>
       </motion.section>
 
@@ -120,7 +120,7 @@ export default function CaseStudy({ caseStudy }: Props) {
       >
         <h2 className="text-3xl font-semibold text-white mb-4">Our Solution</h2>
         <div className="glass rounded-xl p-8">
-          <p className="text-slate-800 text-lg leading-relaxed">{caseStudy.solution}</p>
+          <p className="text-white text-lg leading-relaxed">{caseStudy.solution}</p>
         </div>
       </motion.section>
 
@@ -133,7 +133,7 @@ export default function CaseStudy({ caseStudy }: Props) {
       >
         <h2 className="text-3xl font-semibold text-white mb-4">Results</h2>
         <div className="glass rounded-xl p-8 bg-accent/10 border-accent/20">
-          <p className="text-slate-800 text-lg leading-relaxed">{caseStudy.outcome}</p>
+          <p className="text-white text-lg leading-relaxed">{caseStudy.outcome}</p>
         </div>
       </motion.section>
 
@@ -154,7 +154,7 @@ export default function CaseStudy({ caseStudy }: Props) {
                 <div className="text-2xl font-bold text-accent mb-1">
                   {caseStudy.hseStats.trir}
                 </div>
-                <div className="text-sm text-slate-600">TRIR</div>
+                <div className="text-sm text-slate-400">TRIR</div>
               </div>
             )}
             {caseStudy.hseStats.ltif !== undefined && (
@@ -162,7 +162,7 @@ export default function CaseStudy({ caseStudy }: Props) {
                 <div className="text-2xl font-bold text-accent mb-1">
                   {caseStudy.hseStats.ltif}
                 </div>
-                <div className="text-sm text-slate-600">LTIF</div>
+                <div className="text-sm text-slate-400">LTIF</div>
               </div>
             )}
             {caseStudy.hseStats.hours && (
@@ -170,7 +170,7 @@ export default function CaseStudy({ caseStudy }: Props) {
                 <div className="text-2xl font-bold text-accent mb-1">
                   {caseStudy.hseStats.hours.toLocaleString()}h
                 </div>
-                <div className="text-sm text-slate-600">Total Hours</div>
+                <div className="text-sm text-slate-400">Total Hours</div>
               </div>
             )}
           </div>

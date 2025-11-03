@@ -68,7 +68,7 @@ export default function ColorPalette({ title = 'Color Palette', colors }: ColorP
               {color.cssVar && (
                 <p className="text-xs text-slate-400 font-mono mb-2">{color.cssVar}</p>
               )}
-              <p className="text-sm text-slate-600">{color.usage}</p>
+              <p className="text-sm text-slate-400">{color.usage}</p>
             </div>
 
             {/* Hover Indicator */}

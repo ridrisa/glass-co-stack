@@ -229,7 +229,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                   <select
                     value={formData.scope}
                     onChange={(e) => updateField('scope', e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-accent"
                     required
                   >
                     <option value="">Select scope</option>
@@ -248,7 +248,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                     type="text"
                     value={formData.projectType}
                     onChange={(e) => updateField('projectType', e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="e.g., Office Building, Bridge, Warehouse"
                     required
                   />
@@ -261,7 +261,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                     value={formData.description}
                     onChange={(e) => updateField('description', e.target.value)}
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent resize-none"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent resize-none"
                     placeholder="Describe your project requirements, challenges, and goals..."
                     required
                   />
@@ -289,7 +289,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                     type="text"
                     value={formData.location}
                     onChange={(e) => updateField('location', e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="City, State/Province, Country"
                     required
                   />
@@ -301,7 +301,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                   <select
                     value={formData.timeline}
                     onChange={(e) => updateField('timeline', e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-accent"
                     required
                   >
                     <option value="">Select timeline</option>
@@ -320,7 +320,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                     type="date"
                     value={formData.startDate}
                     onChange={(e) => updateField('startDate', e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-accent"
                   />
                 </div>
               </motion.div>
@@ -345,7 +345,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                   <select
                     value={formData.budgetRange}
                     onChange={(e) => updateField('budgetRange', e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-accent"
                     required
                   >
                     <option value="">Select range</option>
@@ -364,7 +364,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                     type="text"
                     value={formData.fundingSource}
                     onChange={(e) => updateField('fundingSource', e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="e.g., Private, Government, Mixed"
                   />
                 </div>
@@ -392,7 +392,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                       type="text"
                       value={formData.name}
                       onChange={(e) => updateField('name', e.target.value)}
-                      className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
+                      className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
                       required
                     />
                   </div>
@@ -404,7 +404,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                       type="email"
                       value={formData.email}
                       onChange={(e) => updateField('email', e.target.value)}
-                      className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
+                      className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
                       required
                     />
                   </div>
@@ -416,7 +416,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => updateField('phone', e.target.value)}
-                      className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
+                      className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
                       required
                     />
                   </div>
@@ -428,7 +428,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                       type="text"
                       value={formData.company}
                       onChange={(e) => updateField('company', e.target.value)}
-                      className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
+                      className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
                     />
                   </div>
                   <div>
@@ -437,7 +437,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                       type="text"
                       value={formData.role}
                       onChange={(e) => updateField('role', e.target.value)}
-                      className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
+                      className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent"
                       placeholder="e.g., Project Manager, Developer"
                     />
                   </div>
@@ -450,7 +450,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                     type="file"
                     multiple
                     onChange={handleFileChange}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white focus:outline-none focus:ring-2 focus:ring-accent file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-accent file:text-slate-900"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-accent file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-accent file:text-white"
                   />
                   <p className="text-slate-500 text-sm mt-1">
                     PDF, DOC, images (max 10MB per file)
@@ -464,7 +464,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                     value={formData.additionalNotes}
                     onChange={(e) => updateField('additionalNotes', e.target.value)}
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent resize-none"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent resize-none"
                     placeholder="Any other information we should know?"
                   />
                 </div>

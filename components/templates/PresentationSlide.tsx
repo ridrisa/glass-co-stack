@@ -74,7 +74,7 @@ export default function PresentationSlide({
               </span>PRO
             </h1>
             {title && title !== 'GLAZE//PRO' && (
-              <h2 className="text-5xl font-bold text-slate-800 mb-4">{title}</h2>
+              <h2 className="text-5xl font-bold text-white mb-4">{title}</h2>
             )}
             {subtitle && (
               <p className="text-3xl text-accent font-medium italic">{subtitle}</p>
@@ -92,10 +92,10 @@ export default function PresentationSlide({
                 </h2>
               )}
               {subtitle && (
-                <p className="text-2xl text-slate-600">{subtitle}</p>
+                <p className="text-2xl text-slate-400">{subtitle}</p>
               )}
             </div>
-            <div className="flex-1 text-2xl text-slate-800 leading-relaxed">
+            <div className="flex-1 text-2xl text-white leading-relaxed">
               {content}
             </div>
           </>
@@ -112,10 +112,10 @@ export default function PresentationSlide({
               )}
             </div>
             <div className="flex-1 grid grid-cols-2 gap-12">
-              <div className="text-xl text-slate-800 leading-relaxed">
+              <div className="text-xl text-white leading-relaxed">
                 {leftContent}
               </div>
-              <div className="text-xl text-slate-800 leading-relaxed">
+              <div className="text-xl text-white leading-relaxed">
                 {rightContent}
               </div>
             </div>
@@ -176,7 +176,7 @@ export default function PresentationSlide({
                     className={`${colorClass} rounded-2xl p-8 flex flex-col justify-center items-center text-center`}
                   >
                     <div className="text-7xl font-bold mb-4">{metric.value}</div>
-                    <div className="text-2xl text-slate-800">{metric.label}</div>
+                    <div className="text-2xl text-white">{metric.label}</div>
                   </motion.div>
                 )
               })}
@@ -187,8 +187,8 @@ export default function PresentationSlide({
         {type === 'closing' && (
           <div className="flex-1 flex flex-col justify-center items-center text-center">
             <h2 className="text-6xl font-bold text-white mb-8">{title || 'Thank You'}</h2>
-            {subtitle && <p className="text-3xl text-slate-600 mb-12">{subtitle}</p>}
-            {content && <div className="text-2xl text-slate-800">{content}</div>}
+            {subtitle && <p className="text-3xl text-slate-400 mb-12">{subtitle}</p>}
+            {content && <div className="text-2xl text-white">{content}</div>}
           </div>
         )}
 
@@ -196,7 +196,7 @@ export default function PresentationSlide({
         {footer && (
           <div className="mt-auto pt-8 flex justify-between items-end text-sm text-slate-400">
             <div>
-              <p className="font-bold text-slate-600">
+              <p className="font-bold text-slate-400">
                 GLAZE<span className="text-accent">//</span>PRO
               </p>
               <p className="italic text-accent/70">Precision in Transparency</p>
@@ -303,19 +303,19 @@ export function CompanyIntroSlides() {
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="glass-light p-6 rounded-xl">
                 <h4 className="text-2xl font-bold text-accent mb-2">NEOM</h4>
-                <p className="text-lg text-slate-700">Futuristic city glazing systems</p>
+                <p className="text-lg text-slate-300">Futuristic city glazing systems</p>
               </div>
               <div className="glass-light p-6 rounded-xl">
                 <h4 className="text-2xl font-bold text-accent mb-2">Qiddiya</h4>
-                <p className="text-lg text-slate-700">Entertainment capital facades</p>
+                <p className="text-lg text-slate-300">Entertainment capital facades</p>
               </div>
               <div className="glass-light p-6 rounded-xl">
                 <h4 className="text-2xl font-bold text-accent mb-2">Diriyah Gate</h4>
-                <p className="text-lg text-slate-700">Heritage district architecture</p>
+                <p className="text-lg text-slate-300">Heritage district architecture</p>
               </div>
               <div className="glass-light p-6 rounded-xl">
                 <h4 className="text-2xl font-bold text-accent mb-2">Boulevard City</h4>
-                <p className="text-lg text-slate-700">Riyadh urban development</p>
+                <p className="text-lg text-slate-300">Riyadh urban development</p>
               </div>
             </div>
           </div>
@@ -332,7 +332,7 @@ export function CompanyIntroSlides() {
             <p className="text-3xl font-semibold text-accent mb-6">Contact Us</p>
             <p className="text-2xl mb-2">info@glazepro.sa</p>
             <p className="text-2xl mb-6">+966 11 234 5678</p>
-            <p className="text-xl text-slate-600">Riyadh, Saudi Arabia</p>
+            <p className="text-xl text-slate-400">Riyadh, Saudi Arabia</p>
           </div>
         }
       />
@@ -387,7 +387,7 @@ export function ProductShowcaseSlides() {
         type="closing"
         title="Request Technical Specifications"
         content={
-          <p className="text-2xl text-slate-700">
+          <p className="text-2xl text-slate-300">
             Visit <span className="text-accent font-bold">glazepro.sa/specs</span> for detailed datasheets
           </p>
         }

@@ -50,7 +50,7 @@ export default function SectorsPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Our Sectors
             </h1>
-            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               Delivering excellence across diverse industries
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function SectorsPage() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <p className="text-slate-700 leading-relaxed mb-4">
+                    <p className="text-slate-300 leading-relaxed mb-4">
                       {sector.description}
                     </p>
                     <span className="text-accent font-semibold group-hover:underline">

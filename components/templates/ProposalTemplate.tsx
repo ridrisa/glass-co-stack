@@ -81,7 +81,7 @@ export default function ProposalTemplate({
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="max-w-5xl mx-auto bg-white text-slate-900 shadow-2xl print:shadow-none"
+      className="max-w-5xl mx-auto bg-white text-white shadow-2xl print:shadow-none"
     >
       {/* Cover Page */}
       <div className="min-h-screen bg-gradient-to-br from-ink via-paper to-ink text-white p-12 flex flex-col justify-between relative overflow-hidden">
@@ -119,7 +119,7 @@ export default function ProposalTemplate({
           </h3>
 
           <div className="glass-light p-6 rounded-xl">
-            <p className="text-sm text-slate-700 mb-2">Prepared for:</p>
+            <p className="text-sm text-slate-300 mb-2">Prepared for:</p>
             <p className="text-2xl font-bold">{clientName}</p>
           </div>
         </div>
@@ -133,11 +133,11 @@ export default function ProposalTemplate({
       {/* Executive Summary */}
       {executiveSummary && (
         <section className="p-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
             <span className="text-accent">//</span>
             Executive Summary
           </h2>
-          <div className="prose prose-lg max-w-none text-slate-900/80 leading-relaxed">
+          <div className="prose prose-lg max-w-none text-white/80 leading-relaxed">
             <p>{executiveSummary}</p>
           </div>
         </section>
@@ -146,17 +146,17 @@ export default function ProposalTemplate({
       {/* Scope of Work */}
       {scope.length > 0 && (
         <section className="p-12 bg-gray-50">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
             <span className="text-accent">//</span>
             Scope of Work
           </h2>
           <div className="space-y-6">
             {scope.map((section, idx) => (
               <div key={idx} className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
+                <h3 className="text-xl font-bold text-white mb-3">
                   {idx + 1}. {section.title}
                 </h3>
-                <div className="text-slate-900/80 leading-relaxed">
+                <div className="text-white/80 leading-relaxed">
                   {section.content}
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function ProposalTemplate({
       {/* Technical Specifications */}
       {specifications.length > 0 && (
         <section className="p-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
             <span className="text-accent">//</span>
             Technical Specifications
           </h2>
@@ -189,17 +189,17 @@ export default function ProposalTemplate({
                     key={idx}
                     className={`border-b border-ink/10 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                   >
-                    <td className="p-4 font-medium text-slate-900">{spec.glassType}</td>
+                    <td className="p-4 font-medium text-white">{spec.glassType}</td>
                     <td className="p-4 font-mono text-accent">{spec.uValue}</td>
                     <td className="p-4 font-mono text-accent">{spec.shgc}</td>
-                    <td className="p-4 text-slate-900/80">{spec.thickness}</td>
-                    <td className="p-4 text-slate-900/80">{spec.dimensions}</td>
+                    <td className="p-4 text-white/80">{spec.thickness}</td>
+                    <td className="p-4 text-white/80">{spec.dimensions}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <div className="mt-4 text-sm text-slate-900/60 italic">
+          <div className="mt-4 text-sm text-white/60 italic">
             <p>* All specifications comply with Saudi Building Code requirements</p>
             <p>* SASO certification available upon request</p>
           </div>
@@ -209,7 +209,7 @@ export default function ProposalTemplate({
       {/* Project Timeline */}
       {timeline.length > 0 && (
         <section className="p-12 bg-gray-50">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
             <span className="text-accent">//</span>
             Project Timeline
           </h2>
@@ -223,12 +223,12 @@ export default function ProposalTemplate({
                   <span className="text-2xl font-bold text-accent">{idx + 1}</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold text-slate-900">{phase.phase}</h3>
-                  <p className="text-slate-900/70">{phase.milestone}</p>
+                  <h3 className="text-lg font-bold text-white">{phase.phase}</h3>
+                  <p className="text-white/70">{phase.milestone}</p>
                 </div>
                 <div className="flex-shrink-0 text-right">
                   <div className="text-lg font-bold text-accent">{phase.duration}</div>
-                  <div className="text-sm text-slate-900/60">Duration</div>
+                  <div className="text-sm text-white/60">Duration</div>
                 </div>
               </div>
             ))}
@@ -239,7 +239,7 @@ export default function ProposalTemplate({
       {/* Pricing (Optional - Comment out for confidential proposals) */}
       {pricing.length > 0 && (
         <section className="p-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
             <span className="text-accent">//</span>
             Investment Summary
           </h2>
@@ -259,16 +259,16 @@ export default function ProposalTemplate({
                     key={idx}
                     className={`border-b border-ink/10 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                   >
-                    <td className="p-4 font-medium text-slate-900">{item.item}</td>
-                    <td className="p-4 text-right font-mono text-slate-900/80">{item.quantity}</td>
-                    <td className="p-4 text-slate-900/80">{item.unit}</td>
+                    <td className="p-4 font-medium text-white">{item.item}</td>
+                    <td className="p-4 text-right font-mono text-white/80">{item.quantity}</td>
+                    <td className="p-4 text-white/80">{item.unit}</td>
                     <td className="p-4 text-right font-mono text-accent font-semibold">{item.price}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <div className="mt-4 text-sm text-slate-900/60 italic">
+          <div className="mt-4 text-sm text-white/60 italic">
             <p>* Prices are subject to final measurements and specifications</p>
             <p>* VAT (15%) to be added as applicable</p>
           </div>
@@ -278,13 +278,13 @@ export default function ProposalTemplate({
       {/* Terms & Conditions */}
       {terms.length > 0 && (
         <section className="p-12 bg-gray-50">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
             <span className="text-accent">//</span>
             Terms & Conditions
           </h2>
           <ul className="space-y-3">
             {terms.map((term, idx) => (
-              <li key={idx} className="flex gap-3 text-slate-900/80">
+              <li key={idx} className="flex gap-3 text-white/80">
                 <span className="flex-shrink-0 w-6 h-6 bg-accent/10 rounded-full flex items-center justify-center text-accent text-sm font-bold">
                   {idx + 1}
                 </span>
@@ -297,44 +297,44 @@ export default function ProposalTemplate({
 
       {/* Signature & Acceptance */}
       <section className="p-12">
-        <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
           <span className="text-accent">//</span>
           Proposal Acceptance
         </h2>
         <div className="bg-accent/5 border-2 border-accent/20 p-8 rounded-xl mb-8">
-          <p className="text-slate-900/80 mb-6">
+          <p className="text-white/80 mb-6">
             This proposal is valid until <strong className="text-accent">{validUntil}</strong>
           </p>
           <div className="grid grid-cols-2 gap-12 mt-8">
             <div>
               <div className="border-b-2 border-ink/30 pb-2 mb-2">
-                <p className="text-sm text-slate-900/60 mb-8">Client Signature</p>
+                <p className="text-sm text-white/60 mb-8">Client Signature</p>
               </div>
-              <p className="text-sm text-slate-900/60">Date: _________________</p>
+              <p className="text-sm text-white/60">Date: _________________</p>
             </div>
             <div>
               <div className="border-b-2 border-ink/30 pb-2 mb-2">
-                <p className="text-sm text-slate-900/60 mb-8">GLAZE//PRO Representative</p>
+                <p className="text-sm text-white/60 mb-8">GLAZE//PRO Representative</p>
               </div>
-              <p className="text-sm text-slate-900/60">Date: _________________</p>
+              <p className="text-sm text-white/60">Date: _________________</p>
             </div>
           </div>
         </div>
 
         <div className="text-center">
-          <h3 className="text-xl font-bold text-slate-900 mb-4">
+          <h3 className="text-xl font-bold text-white mb-4">
             Ready to Begin?
           </h3>
-          <p className="text-slate-900/70 mb-6">
+          <p className="text-white/70 mb-6">
             Contact us to discuss this proposal or request modifications
           </p>
           <div className="inline-block bg-accent/10 p-6 rounded-xl">
-            <p className="text-sm text-slate-900/70 mb-2">Contact Person</p>
-            <p className="text-lg font-bold text-slate-900">{contactPerson}</p>
+            <p className="text-sm text-white/70 mb-2">Contact Person</p>
+            <p className="text-lg font-bold text-white">{contactPerson}</p>
             <p className="text-accent mt-2">
               <a href={`mailto:${contactEmail}`} className="hover:underline">{contactEmail}</a>
             </p>
-            <p className="text-slate-900/70">
+            <p className="text-white/70">
               <a href={`tel:${contactPhone.replace(/\s/g, '')}`} className="hover:underline">{contactPhone}</a>
             </p>
           </div>

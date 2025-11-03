@@ -57,7 +57,7 @@ export default function CompanyStats() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t('stats.title')}
           </h2>
-          <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+          <p className="text-slate-400 text-lg max-w-3xl mx-auto">
             {t('stats.subtitle')}
           </p>
         </motion.div>

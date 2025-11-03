@@ -28,7 +28,7 @@ export default function AnimationPreview() {
           {/* Fade Up */}
           <div className="glass p-8 rounded-2xl">
             <h4 className="text-lg font-bold text-white mb-4">fadeUp</h4>
-            <p className="text-sm text-slate-600 mb-6">
+            <p className="text-sm text-slate-400 mb-6">
               Entrance animation for page content
             </p>
             <button
@@ -60,7 +60,7 @@ transition: {
           {/* Glass Float */}
           <div className="glass p-8 rounded-2xl">
             <h4 className="text-lg font-bold text-white mb-4">glassFloat</h4>
-            <p className="text-sm text-slate-600 mb-6">
+            <p className="text-sm text-slate-400 mb-6">
               Card entrance with scale and fade
             </p>
             <button
@@ -92,7 +92,7 @@ transition: {
           {/* Hover Lift */}
           <div className="glass p-8 rounded-2xl">
             <h4 className="text-lg font-bold text-white mb-4">hoverLift</h4>
-            <p className="text-sm text-slate-600 mb-6">
+            <p className="text-sm text-slate-400 mb-6">
               Interactive hover state
             </p>
             <motion.div
@@ -117,7 +117,7 @@ transition={{
           {/* Stagger Children */}
           <div className="glass p-8 rounded-2xl">
             <h4 className="text-lg font-bold text-white mb-4">staggerChildren</h4>
-            <p className="text-sm text-slate-600 mb-6">
+            <p className="text-sm text-slate-400 mb-6">
               Sequential list animations
             </p>
             <button
@@ -247,7 +247,7 @@ transition={{
             <div>
               <h4 className="text-lg font-bold text-white mb-3">Brand Easing</h4>
               <p className="text-spec mb-4">[0.22, 1, 0.36, 1]</p>
-              <p className="text-sm text-slate-600 mb-4">
+              <p className="text-sm text-slate-400 mb-4">
                 Smooth, spring-like motion for all entrance animations
               </p>
               <motion.div
@@ -268,7 +268,7 @@ transition={{
             <div>
               <h4 className="text-lg font-bold text-white mb-3">Hover Easing</h4>
               <p className="text-spec mb-4">ease-out</p>
-              <p className="text-sm text-slate-600 mb-4">
+              <p className="text-sm text-slate-400 mb-4">
                 Quick, responsive for interactive states
               </p>
               <motion.div
@@ -296,10 +296,10 @@ transition={{
           Accessibility: Reduced Motion
         </h3>
         <div className="glass p-8 rounded-2xl">
-          <p className="text-slate-600 mb-6">
+          <p className="text-slate-400 mb-6">
             All animations respect the user's <code className="text-spec">prefers-reduced-motion</code> setting:
           </p>
-          <pre className="text-sm text-slate-600 font-mono p-6 bg-ink/50 rounded-xl overflow-x-auto">
+          <pre className="text-sm text-slate-400 font-mono p-6 bg-ink/50 rounded-xl overflow-x-auto">
 {`@media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -310,7 +310,7 @@ transition={{
           </pre>
           <div className="mt-6 glass-light p-6 rounded-xl">
             <h4 className="text-lg font-bold text-white mb-2">Best Practices</h4>
-            <ul className="space-y-2 text-sm text-slate-600">
+            <ul className="space-y-2 text-sm text-slate-400">
               <li>✓ Essential motion only (no decorative animations)</li>
               <li>✓ Subtle over dramatic</li>
               <li>✓ Purposeful, not distracting</li>

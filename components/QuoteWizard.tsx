@@ -61,7 +61,7 @@ export default function QuoteWizard() {
       </GlassShimmer>
       {exportData && (
         <div className="mt-4 p-4 rounded-lg bg-slate-50 border border-slate-200">
-          <p className="text-sm text-slate-600 mb-2">✓ RFQ data exported as JSON</p>
+          <p className="text-sm text-slate-400 mb-2">✓ RFQ data exported as JSON</p>
         </div>
       )}
     </div>

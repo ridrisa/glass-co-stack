@@ -127,7 +127,7 @@ export default function ProjectsPage() {
           <motion.h1 {...fadeUp} className="text-3xl md:text-5xl font-bold text-white mb-4">
             {t('projects.title')}
           </motion.h1>
-          <motion.p {...fadeUp} className="text-slate-700 max-w-3xl text-lg mb-8">
+          <motion.p {...fadeUp} className="text-slate-300 max-w-3xl text-lg mb-8">
             {t('projects.subtitle')}
           </motion.p>
           <div className="mt-4 flex flex-wrap gap-3">
@@ -212,7 +212,7 @@ export default function ProjectsPage() {
                   <div className="flex items-start justify-between gap-4 mb-3">
                     <div className="flex-1">
                       <div className="text-lg font-semibold text-white">{p.name}</div>
-                      <div className="text-slate-600 text-sm mt-1">
+                      <div className="text-slate-400 text-sm mt-1">
                         {p.city} · {p.year}
                       </div>
                     </div>
@@ -220,9 +220,9 @@ export default function ProjectsPage() {
                       {p.system}
                     </span>
                   </div>
-                  <div className="mt-3 text-slate-700 text-sm">
+                  <div className="mt-3 text-slate-300 text-sm">
                     <div className="mb-1">
-                      <span className="text-slate-600">{lang === 'en' ? 'Sector' : 'القطاع'}: </span>
+                      <span className="text-slate-400">{lang === 'en' ? 'Sector' : 'القطاع'}: </span>
                       <span>{lang === 'en' ? p.sector : {
                         'Commercial': 'تجاري',
                         'Hospitality': 'ضيافة',
@@ -232,7 +232,7 @@ export default function ProjectsPage() {
                       }[p.sector]}</span>
                     </div>
                     <div>
-                      <span className="text-slate-600">{lang === 'en' ? 'Area' : 'المساحة'}: </span>
+                      <span className="text-slate-400">{lang === 'en' ? 'Area' : 'المساحة'}: </span>
                       <span>{p.areaSqm.toLocaleString()} m²</span>
                     </div>
                   </div>

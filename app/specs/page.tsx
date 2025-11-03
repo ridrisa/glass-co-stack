@@ -144,10 +144,10 @@ export default function SpecsPage() {
           <motion.h1 {...fadeUp} className="text-3xl md:text-5xl font-bold text-white mb-4">
             {t('specs.title')}
           </motion.h1>
-          <motion.p {...fadeUp} className="text-slate-700 max-w-3xl mb-8 text-lg">
+          <motion.p {...fadeUp} className="text-slate-300 max-w-3xl mb-8 text-lg">
             {t('specs.subtitle')}
           </motion.p>
-          <motion.p {...fadeUp} className="text-slate-600 max-w-3xl mb-8">
+          <motion.p {...fadeUp} className="text-slate-400 max-w-3xl mb-8">
             {lang === 'en'
               ? 'Comprehensive performance data for our glass products, optimized for Saudi Arabia\'s climate. Values are based on standard configurations and may vary with custom specifications, frame systems, and installation conditions. All measurements follow SBC (Saudi Building Code), EN/ISO, and ASTM standards — ensuring compliance with Vision 2030 sustainability goals.'
               : 'بيانات الأداء الشاملة لمنتجاتنا الزجاجية، محسّنة لمناخ المملكة العربية السعودية. القيم مبنية على التكوينات القياسية وقد تختلف مع المواصفات المخصصة وأنظمة الإطارات وظروف التركيب. جميع القياسات تتبع الكود السعودي للبناء (SBC) ومعايير EN/ISO وASTM — مما يضمن الامتثال لأهداف الاستدامة في رؤية 2030.'}
@@ -160,7 +160,7 @@ export default function SpecsPage() {
               <h3 className="text-xl font-semibold text-white mb-4">
                 {lang === 'en' ? 'Testing Standards' : 'معايير الاختبار'}
               </h3>
-              <ul className="space-y-2 text-slate-700 text-sm">
+              <ul className="space-y-2 text-slate-300 text-sm">
                 <li>• U-value: EN 673 / ISO 10292 / NFRC 100</li>
                 <li>• SHGC: EN 410 / NFRC 200</li>
                 <li>• {lang === 'en' ? 'Light Transmittance' : 'نقل الضوء'}: EN 410 / NFRC 200</li>
@@ -173,7 +173,7 @@ export default function SpecsPage() {
               <h3 className="text-xl font-semibold text-white mb-4">
                 {lang === 'en' ? 'Notes' : 'ملاحظات'}
               </h3>
-              <ul className="space-y-2 text-slate-700 text-sm">
+              <ul className="space-y-2 text-slate-300 text-sm">
                 <li>• {lang === 'en' ? 'Values measured at center of glass' : 'القيم مقاسة في مركز الزجاج'}</li>
                 <li>• {lang === 'en' ? 'Frame and edge effects not included' : 'تأثيرات الإطار والحواف غير مدمجة'}</li>
                 <li>• {lang === 'en' ? 'Actual performance depends on installation' : 'الأداء الفعلي يعتمد على التركيب'}</li>

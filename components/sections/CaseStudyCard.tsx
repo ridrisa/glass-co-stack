@@ -75,11 +75,11 @@ export default function CaseStudyCard({
             <div className="space-y-3">
               <div>
                 <div className="text-xs text-accent font-semibold mb-1">Challenge</div>
-                <p className="text-sm text-slate-600 line-clamp-2">{challenge}</p>
+                <p className="text-sm text-slate-400 line-clamp-2">{challenge}</p>
               </div>
               <div>
                 <div className="text-xs text-accent font-semibold mb-1">Solution</div>
-                <p className="text-sm text-slate-600 line-clamp-2">{solution}</p>
+                <p className="text-sm text-slate-400 line-clamp-2">{solution}</p>
               </div>
             </div>
 

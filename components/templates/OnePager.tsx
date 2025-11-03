@@ -48,20 +48,20 @@ export default function OnePager({
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="max-w-4xl mx-auto bg-white text-slate-900 p-12 shadow-2xl print:shadow-none"
+      className="max-w-4xl mx-auto bg-white text-white p-12 shadow-2xl print:shadow-none"
     >
       {/* Header */}
       <header className="mb-12 border-b-2 border-accent pb-8">
         <div className="flex justify-between items-start">
           <div>
-            <h1 className="text-5xl font-bold text-slate-900 mb-2">
+            <h1 className="text-5xl font-bold text-white mb-2">
               GLAZE<span className="text-accent">//</span>PRO
             </h1>
             <p className="text-accent text-lg font-medium italic">
               {subtitle}
             </p>
           </div>
-          <div className="text-right text-sm text-slate-900/70">
+          <div className="text-right text-sm text-white/70">
             <p>{new Date().toLocaleDateString('en-US', {
               year: 'numeric',
               month: 'long',
@@ -74,7 +74,7 @@ export default function OnePager({
       {/* Title Section */}
       {title !== 'GLAZE//PRO' && (
         <div className="mb-10">
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             {title}
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-accent to-saudi-green rounded-full"></div>
@@ -85,11 +85,11 @@ export default function OnePager({
       <div className="space-y-8 mb-12">
         {sections.map((section, idx) => (
           <section key={idx} className="group">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
               <span className="text-accent">//</span>
               {section.heading}
             </h3>
-            <div className="text-slate-900/80 leading-relaxed">
+            <div className="text-white/80 leading-relaxed">
               {typeof section.content === 'string' ? (
                 <p>{section.content}</p>
               ) : (
@@ -117,13 +117,13 @@ export default function OnePager({
 
       {/* Footer */}
       <footer className="border-t-2 border-ink/10 pt-8 mt-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-slate-900/70">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-white/70">
           <div>
-            <p className="font-semibold text-slate-900 mb-1">Contact</p>
+            <p className="font-semibold text-white mb-1">Contact</p>
             <p>{footer.contact}</p>
           </div>
           <div>
-            <p className="font-semibold text-slate-900 mb-1">Email</p>
+            <p className="font-semibold text-white mb-1">Email</p>
             <p>
               <a href={`mailto:${footer.email}`} className="text-accent hover:underline">
                 {footer.email}
@@ -131,7 +131,7 @@ export default function OnePager({
             </p>
           </div>
           <div>
-            <p className="font-semibold text-slate-900 mb-1">Phone</p>
+            <p className="font-semibold text-white mb-1">Phone</p>
             <p>
               <a href={`tel:${footer.phone.replace(/\s/g, '')}`} className="text-accent hover:underline">
                 {footer.phone}
@@ -139,7 +139,7 @@ export default function OnePager({
             </p>
           </div>
         </div>
-        <div className="mt-6 text-center text-xs text-slate-900/50">
+        <div className="mt-6 text-center text-xs text-white/50">
           <p>© {new Date().getFullYear()} GLAZE//PRO. All rights reserved. // Supporting Vision 2030</p>
         </div>
       </footer>
@@ -189,15 +189,15 @@ export function CompanyOverviewOnePager() {
         <div className="grid grid-cols-3 gap-4 mt-4">
           <div className="text-center p-4 bg-accent/5 rounded-lg">
             <div className="text-3xl font-bold text-accent">480+</div>
-            <div className="text-sm text-slate-900/70 mt-1">Projects Delivered</div>
+            <div className="text-sm text-white/70 mt-1">Projects Delivered</div>
           </div>
           <div className="text-center p-4 bg-saudi-green/5 rounded-lg">
             <div className="text-3xl font-bold text-saudi-green">14-28</div>
-            <div className="text-sm text-slate-900/70 mt-1">Days Lead Time</div>
+            <div className="text-sm text-white/70 mt-1">Days Lead Time</div>
           </div>
           <div className="text-center p-4 bg-desert-gold/5 rounded-lg">
             <div className="text-3xl font-bold text-desert-gold">6+</div>
-            <div className="text-sm text-slate-900/70 mt-1">Glass Systems</div>
+            <div className="text-sm text-white/70 mt-1">Glass Systems</div>
           </div>
         </div>
       )

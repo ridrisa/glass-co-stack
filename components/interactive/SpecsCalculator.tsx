@@ -58,7 +58,7 @@ export default function SpecsCalculator() {
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all ${
             calcType === 'u-value'
               ? 'bg-accent text-white'
-              : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
+              : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
           }`}
         >
           U-Value
@@ -68,7 +68,7 @@ export default function SpecsCalculator() {
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all ${
             calcType === 'weight'
               ? 'bg-accent text-white'
-              : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
+              : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
           }`}
         >
           Weight
@@ -78,7 +78,7 @@ export default function SpecsCalculator() {
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all ${
             calcType === 'area'
               ? 'bg-accent text-white'
-              : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
+              : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
           }`}
         >
           Area
@@ -134,7 +134,7 @@ export default function SpecsCalculator() {
 
             <div className="mt-8 p-6 rounded-xl bg-accent/10 border-2 border-accent">
               <div className="text-center">
-                <div className="text-sm text-slate-600 mb-2">Indicative U-Value</div>
+                <div className="text-sm text-slate-400 mb-2">Indicative U-Value</div>
                 <div className="text-4xl font-bold text-accent mb-1">
                   {calculateUValue()}
                 </div>
@@ -193,7 +193,7 @@ export default function SpecsCalculator() {
             <div className="mt-8 space-y-4">
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-600">Area</span>
+                  <span className="text-slate-400">Area</span>
                   <span className="text-white font-semibold">
                     {calculateWeight().area} m²
                   </span>
@@ -201,7 +201,7 @@ export default function SpecsCalculator() {
               </div>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-600">Weight per m²</span>
+                  <span className="text-slate-400">Weight per m²</span>
                   <span className="text-white font-semibold">
                     {calculateWeight().weightPerM2} kg/m²
                   </span>
@@ -254,7 +254,7 @@ export default function SpecsCalculator() {
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="p-6 rounded-xl bg-accent/10 border-2 border-accent">
                 <div className="text-center">
-                  <div className="text-sm text-slate-600 mb-2">Area</div>
+                  <div className="text-sm text-slate-400 mb-2">Area</div>
                   <div className="text-3xl font-bold text-accent mb-1">
                     {calculateArea().area}
                   </div>
@@ -263,7 +263,7 @@ export default function SpecsCalculator() {
               </div>
               <div className="p-6 rounded-xl bg-accent/10 border-2 border-accent">
                 <div className="text-center">
-                  <div className="text-sm text-slate-600 mb-2">Perimeter</div>
+                  <div className="text-sm text-slate-400 mb-2">Perimeter</div>
                   <div className="text-3xl font-bold text-accent mb-1">
                     {calculateArea().perimeter}
                   </div>

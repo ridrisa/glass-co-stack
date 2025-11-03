@@ -50,7 +50,7 @@ export default function CareersPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Careers
             </h1>
-            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               Build your career with industry leaders
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function CareersPage() {
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   Competitive Benefits
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-slate-300">
                   Comprehensive health insurance, retirement plans, and performance bonuses.
                 </p>
               </div>
@@ -70,7 +70,7 @@ export default function CareersPage() {
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   Career Development
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-slate-300">
                   Ongoing training, certification support, and clear advancement pathways.
                 </p>
               </div>
@@ -78,7 +78,7 @@ export default function CareersPage() {
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   Diverse Projects
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-slate-300">
                   Work on challenging, high-profile projects across multiple sectors.
                 </p>
               </div>
@@ -86,7 +86,7 @@ export default function CareersPage() {
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   Team Culture
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-slate-300">
                   Collaborative environment with experienced professionals and mentorship.
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default function CareersPage() {
                       <h3 className="text-xl font-semibold text-white mb-2">
                         {position.title}
                       </h3>
-                      <div className="flex flex-wrap gap-4 text-slate-600 text-sm">
+                      <div className="flex flex-wrap gap-4 text-slate-400 text-sm">
                         <span>{position.department}</span>
                         <span>•</span>
                         <span>{position.location}</span>

@@ -8,56 +8,56 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // GLAZE//PRO Brand Architecture - Light Day Theme
+        // GLAZE//PRO Brand Architecture - Dark Theme
         // Core Identity
-        ink: '#f8fafc', // Very light blue-gray (primary backgrounds)
-        paper: '#ffffff', // Pure white (cards, secondary backgrounds)
+        ink: '#1a1f2e', // Deep dark blue-gray (primary backgrounds)
+        paper: '#232938', // Slightly lighter dark (cards, secondary backgrounds)
         accent: '#2563eb', // Vibrant blue (CTAs, links, primary actions)
 
-        // Glass Signature Colors - Light Theme
+        // Glass Signature Colors - Dark Theme
         glass: {
-          DEFAULT: 'rgba(255,255,255,0.8)', // Base glassmorphism
-          border: 'rgba(0,0,0,0.08)', // Subtle borders
-          shimmer: 'rgba(255,255,255,0.95)', // Hover states
-          clear: 'rgba(255,255,255,0.6)', // Ultra-light
-          blue: 'rgba(37,99,235,0.05)', // Low-E tint
-          green: 'rgba(16,185,129,0.05)', // Smart glass tint
-          bronze: 'rgba(245,158,11,0.05)', // Solar control tint
+          DEFAULT: 'rgba(35,41,56,0.8)', // Base glassmorphism
+          border: 'rgba(255,255,255,0.08)', // Subtle borders
+          shimmer: 'rgba(35,41,56,0.95)', // Hover states
+          clear: 'rgba(35,41,56,0.6)', // Ultra-light
+          blue: 'rgba(37,99,235,0.15)', // Low-E tint
+          green: 'rgba(16,185,129,0.15)', // Smart glass tint
+          bronze: 'rgba(245,158,11,0.15)', // Solar control tint
         },
 
-        // Border System - Light Theme
+        // Border System - Dark Theme
         border: {
-          DEFAULT: '#e2e8f0', // Standard borders
-          subtle: 'rgba(0,0,0,0.05)', // Ultra-subtle
-          medium: 'rgba(0,0,0,0.1)', // Standard glass
-          strong: 'rgba(0,0,0,0.15)', // Emphasized
+          DEFAULT: 'rgba(255,255,255,0.1)', // Standard borders
+          subtle: 'rgba(255,255,255,0.05)', // Ultra-subtle
+          medium: 'rgba(255,255,255,0.1)', // Standard glass
+          strong: 'rgba(255,255,255,0.15)', // Emphasized
         },
 
-        // Saudi-Optimized Palette (Vision 2030 Colors) - Light Theme
-        'saudi-green': '#059669', // Palm oasis, sustainability (darker for visibility)
-        'desert-gold': '#d97706', // Traditional gold, luxury (darker)
-        'riyadh-blue': '#2563eb', // Desert sky, innovation
+        // Saudi-Optimized Palette (Vision 2030 Colors) - Dark Theme
+        'saudi-green': '#10b981', // Palm oasis, sustainability
+        'desert-gold': '#f59e0b', // Traditional gold, luxury
+        'riyadh-blue': '#3b82f6', // Desert sky, innovation
 
-        // Contextual Colors - Light Theme
-        success: '#059669',
-        warning: '#d97706',
-        danger: '#dc2626',
-        info: '#2563eb',
+        // Contextual Colors - Dark Theme
+        success: '#10b981',
+        warning: '#f59e0b',
+        danger: '#ef4444',
+        info: '#3b82f6',
 
-        // Text Colors - Light Theme
+        // Text Colors - Dark Theme
         text: {
-          primary: '#0f172a', // Very dark slate
-          secondary: '#475569', // Medium slate
-          tertiary: '#94a3b8', // Light slate
+          primary: '#ffffff', // White
+          secondary: '#e2e8f0', // Light gray
+          tertiary: '#cbd5e1', // Medium gray
         },
 
-        // Legacy compatibility - Light Theme
-        primary: '#ffffff',
-        amber: '#d97706',
-        lime: '#059669',
-        gold: '#d97706',
-        'glass-blue': '#dbeafe',
-        'glass-light': '#eff6ff',
+        // Legacy compatibility - Dark Theme
+        primary: '#1a1f2e',
+        amber: '#f59e0b',
+        lime: '#10b981',
+        gold: '#f59e0b',
+        'glass-blue': '#1e293b',
+        'glass-light': '#334155',
         'glass-accent': '#2563eb',
       },
       boxShadow: {

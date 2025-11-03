@@ -20,10 +20,10 @@ export default function ContactPage() {
           <motion.h1 {...fadeUp} className="text-3xl md:text-5xl font-bold text-white mb-4">
             {t('contact.title')}
           </motion.h1>
-          <motion.p {...fadeUp} className="text-slate-700 mt-2 max-w-3xl text-lg mb-8">
+          <motion.p {...fadeUp} className="text-slate-300 mt-2 max-w-3xl text-lg mb-8">
             {t('contact.subtitle')}
           </motion.p>
-          <motion.p {...fadeUp} className="text-slate-600 max-w-3xl mb-8">
+          <motion.p {...fadeUp} className="text-slate-400 max-w-3xl mb-8">
             {lang === 'en'
               ? 'Share your drawings and scope to receive a detailed quotation with lead times and performance data.'
               : 'شارك رسوماتك ونطاق المشروع لتلقي عرض أسعار مفصل مع أوقات التسليم وبيانات الأداء.'}
@@ -37,13 +37,13 @@ export default function ContactPage() {
               <h3 className="text-xl font-semibold text-white mb-3">
                 {lang === 'en' ? 'Riyadh Headquarters' : 'المقر الرئيسي - الرياض'}
               </h3>
-              <p className="text-slate-700 text-sm mb-2">
+              <p className="text-slate-300 text-sm mb-2">
                 {lang === 'en' ? 'King Fahd Road, Al Olaya' : 'طريق الملك فهد، العليا'}
               </p>
-              <p className="text-slate-600 text-xs mb-3">
+              <p className="text-slate-400 text-xs mb-3">
                 {lang === 'en' ? 'Tel: +966 11 XXX XXXX' : 'هاتف: 966 11 XXX XXXX+'}
               </p>
-              <p className="text-slate-700 text-sm whitespace-pre-line">
+              <p className="text-slate-300 text-sm whitespace-pre-line">
                 {lang === 'en' 
                   ? 'Sun–Thu: 8:00–17:00\nSat: 9:00–14:00\nFri: Closed'
                   : 'الأحد–الخميس: 8:00–17:00\nالسبت: 9:00–14:00\nالجمعة: مغلق'}
@@ -53,13 +53,13 @@ export default function ContactPage() {
               <h3 className="text-xl font-semibold text-white mb-3">
                 {lang === 'en' ? 'Jeddah Branch' : 'فرع جدة'}
               </h3>
-              <p className="text-slate-700 text-sm mb-2">
+              <p className="text-slate-300 text-sm mb-2">
                 {lang === 'en' ? 'Prince Sultan Street, Al Shati' : 'شارع الأمير سلطان، الشاطئ'}
               </p>
-              <p className="text-slate-600 text-xs mb-3">
+              <p className="text-slate-400 text-xs mb-3">
                 {lang === 'en' ? 'Tel: +966 12 XXX XXXX' : 'هاتف: 966 12 XXX XXXX+'}
               </p>
-              <p className="text-slate-700 text-sm whitespace-pre-line">
+              <p className="text-slate-300 text-sm whitespace-pre-line">
                 {lang === 'en'
                   ? 'Sun–Thu: 8:00–17:00\nSat: 9:00–14:00\nFri: Closed'
                   : 'الأحد–الخميس: 8:00–17:00\nالسبت: 9:00–14:00\nالجمعة: مغلق'}
@@ -69,13 +69,13 @@ export default function ContactPage() {
               <h3 className="text-xl font-semibold text-white mb-3">
                 {lang === 'en' ? 'Dammam Branch' : 'فرع الدمام'}
               </h3>
-              <p className="text-slate-700 text-sm mb-2">
+              <p className="text-slate-300 text-sm mb-2">
                 {lang === 'en' ? 'King Faisal Street, Al Faisaliyah' : 'شارع الملك فيصل، الفيصلية'}
               </p>
-              <p className="text-slate-600 text-xs mb-3">
+              <p className="text-slate-400 text-xs mb-3">
                 {lang === 'en' ? 'Tel: +966 13 XXX XXXX' : 'هاتف: 966 13 XXX XXXX+'}
               </p>
-              <p className="text-slate-700 text-sm whitespace-pre-line">
+              <p className="text-slate-300 text-sm whitespace-pre-line">
                 {lang === 'en'
                   ? 'Sun–Thu: 8:00–17:00\nSat: 9:00–14:00\nFri: Closed'
                   : 'الأحد–الخميس: 8:00–17:00\nالسبت: 9:00–14:00\nالجمعة: مغلق'}

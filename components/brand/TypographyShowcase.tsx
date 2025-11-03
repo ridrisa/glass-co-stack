@@ -24,7 +24,7 @@ export default function TypographyShowcase() {
           >
             <div className="text-6xl font-display font-bold mb-4">Aa</div>
             <h4 className="text-xl font-bold text-accent mb-2">Inter</h4>
-            <p className="text-sm text-slate-600 mb-3">
+            <p className="text-sm text-slate-400 mb-3">
               Display & Body (Latin)
             </p>
             <div className="space-y-2 text-sm">
@@ -42,7 +42,7 @@ export default function TypographyShowcase() {
           >
             <div className="text-6xl font-display font-bold mb-4" dir="rtl">أب</div>
             <h4 className="text-xl font-bold text-saudi-green mb-2">Tajawal</h4>
-            <p className="text-sm text-slate-600 mb-3">
+            <p className="text-sm text-slate-400 mb-3">
               Display & Body (Arabic)
             </p>
             <div className="space-y-2 text-sm" dir="rtl">
@@ -59,7 +59,7 @@ export default function TypographyShowcase() {
           >
             <div className="text-6xl font-mono font-bold mb-4">1.6</div>
             <h4 className="text-xl font-bold text-desert-gold mb-2">IBM Plex Mono</h4>
-            <p className="text-sm text-slate-600 mb-3">
+            <p className="text-sm text-slate-400 mb-3">
               Technical Specifications
             </p>
             <div className="space-y-2 text-sm font-mono">
@@ -122,19 +122,19 @@ export default function TypographyShowcase() {
           </div>
           <div className="border-b border-slate-200 pb-4">
             <p className="text-xs text-slate-400 font-mono mb-2">text-lg (18px)</p>
-            <p className="text-lg text-slate-800">
+            <p className="text-lg text-white">
               Large body text for introductory paragraphs and important content
             </p>
           </div>
           <div className="border-b border-slate-200 pb-4">
             <p className="text-xs text-slate-400 font-mono mb-2">text-base (16px)</p>
-            <p className="text-base text-slate-600">
+            <p className="text-base text-slate-400">
               Standard body text with optimal readability for long-form content. This is the default size for paragraphs, descriptions, and general content throughout the website.
             </p>
           </div>
           <div>
             <p className="text-xs text-slate-400 font-mono mb-2">text-sm (14px)</p>
-            <p className="text-sm text-slate-600">
+            <p className="text-sm text-slate-400">
               Small text for captions, labels, and secondary information
             </p>
           </div>
@@ -172,7 +172,7 @@ export default function TypographyShowcase() {
               Professional body text with optimal readability and refined appearance for all content sections.
             </p>
             <p className="text-sm text-slate-500 font-mono mt-2">
-              font-reading, leading-relaxed, text-slate-600
+              font-reading, leading-relaxed, text-slate-400
             </p>
           </motion.div>
 
@@ -224,7 +224,7 @@ export default function TypographyShowcase() {
             <p className="text-accent font-medium italic mb-4">
               Precision in Transparency
             </p>
-            <p className="text-slate-600 leading-relaxed">
+            <p className="text-slate-400 leading-relaxed">
               Saudi Arabia's specialized architectural glazing systems company — transforming façades with precision-engineered glass solutions that combine beauty, safety, and sustainability.
             </p>
           </motion.div>
@@ -241,7 +241,7 @@ export default function TypographyShowcase() {
             <p className="text-accent font-medium italic mb-4">
               دقة في الشفافية
             </p>
-            <p className="text-slate-600 leading-relaxed">
+            <p className="text-slate-400 leading-relaxed">
               شركة أنظمة الزجاج المعماري المتخصصة في المملكة العربية السعودية — تحويل الواجهات بحلول زجاجية دقيقة الهندسة تجمع بين الجمال والأمان والاستدامة.
             </p>
           </motion.div>

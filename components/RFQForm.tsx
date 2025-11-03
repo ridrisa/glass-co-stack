@@ -118,7 +118,7 @@ export default function RFQForm() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent"
                     placeholder="John Doe"
                   />
                 </div>
@@ -134,7 +134,7 @@ export default function RFQForm() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -150,7 +150,7 @@ export default function RFQForm() {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent"
                     placeholder="+1 234 567 8900"
                   />
                 </div>
@@ -165,7 +165,7 @@ export default function RFQForm() {
                     required
                     value={formData.project_type}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white focus:outline-none focus:ring-2 focus:ring-glass-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-glass-accent"
                   >
                     <option value="" className="bg-gray-800">Select a type</option>
                     {projectTypes.map((type) => (
@@ -187,7 +187,7 @@ export default function RFQForm() {
                     required
                     value={formData.dimensions}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent"
                     placeholder="e.g., 6ft x 4ft"
                   />
                 </div>
@@ -202,7 +202,7 @@ export default function RFQForm() {
                     required
                     value={formData.glass_type}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white focus:outline-none focus:ring-2 focus:ring-glass-accent"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-glass-accent"
                   >
                     <option value="" className="bg-gray-800">Select a type</option>
                     {glassTypes.map((type) => (
@@ -224,7 +224,7 @@ export default function RFQForm() {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-glass-accent resize-none"
                   placeholder="Tell us more about your project..."
                 />
               </div>

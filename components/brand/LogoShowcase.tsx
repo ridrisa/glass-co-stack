@@ -99,7 +99,7 @@ export default function LogoShowcase() {
             className="bg-white border-2 border-gray-200 p-12 rounded-2xl"
           >
             <p className="text-xs text-gray-400 mb-6">On Light Background (Reversed)</p>
-            <h2 className="text-5xl font-bold text-slate-900 text-center">
+            <h2 className="text-5xl font-bold text-white text-center">
               GLAZE<span className="text-accent relative">
                 //
                 <span className="absolute inset-0 blur-sm opacity-50">//</span>
@@ -120,7 +120,7 @@ export default function LogoShowcase() {
                 <span className="absolute inset-0 blur-sm opacity-50">//</span>
               </span>PRO
             </h2>
-            <p className="text-slate-600 text-center mt-3 italic">Precision in Transparency</p>
+            <p className="text-slate-400 text-center mt-3 italic">Precision in Transparency</p>
           </motion.div>
 
           {/* Monochrome Black */}
@@ -216,7 +216,7 @@ export default function LogoShowcase() {
               GLAZE<span className="text-accent">//</span>PRO
             </h2>
           </div>
-          <p className="text-sm text-slate-600 mt-4 text-center">
+          <p className="text-sm text-slate-400 mt-4 text-center">
             Maintain minimum clear space of <strong className="text-accent">1× letter height</strong> around logo on all sides
           </p>
         </div>
@@ -237,7 +237,7 @@ export default function LogoShowcase() {
               </svg>
               Do's
             </h4>
-            <ul className="space-y-2 text-sm text-slate-700">
+            <ul className="space-y-2 text-sm text-slate-300">
               <li>✓ Use approved color variations</li>
               <li>✓ Maintain aspect ratio when scaling</li>
               <li>✓ Ensure sufficient contrast with background</li>
@@ -254,7 +254,7 @@ export default function LogoShowcase() {
               </svg>
               Don'ts
             </h4>
-            <ul className="space-y-2 text-sm text-slate-700">
+            <ul className="space-y-2 text-sm text-slate-300">
               <li>✗ Alter logo proportions or distort</li>
               <li>✗ Change colors or add effects</li>
               <li>✗ Place on busy backgrounds</li>
@@ -272,7 +272,7 @@ export default function LogoShowcase() {
           Download Logo Assets
         </h3>
         <div className="glass p-8 rounded-2xl">
-          <p className="text-slate-600 mb-6">
+          <p className="text-slate-400 mb-6">
             Download logo files in various formats for print and digital use:
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

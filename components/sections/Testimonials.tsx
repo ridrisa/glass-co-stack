@@ -63,7 +63,7 @@ export default function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t('testimonials.title')}
           </h2>
-          <p className="text-slate-600 text-lg">
+          <p className="text-slate-400 text-lg">
             {t('testimonials.subtitle')}
           </p>
         </motion.div>
@@ -93,7 +93,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote */}
-                <blockquote className="text-xl md:text-2xl text-slate-800 font-medium text-center mb-8 leading-relaxed">
+                <blockquote className="text-xl md:text-2xl text-white font-medium text-center mb-8 leading-relaxed">
                   "{testimonials[activeIndex].quote}"
                 </blockquote>
 

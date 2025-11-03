@@ -63,7 +63,7 @@ export default function ServicesPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Our Services
             </h1>
-            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               Comprehensive construction solutions tailored to your project needs
             </p>
           </motion.div>
@@ -79,12 +79,12 @@ export default function ServicesPage() {
                 <h2 className="text-2xl font-semibold text-white mb-4">
                   {service.title}
                 </h2>
-                <p className="text-slate-700 mb-6 leading-relaxed">
+                <p className="text-slate-300 mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature) => (
-                    <li key={feature} className="flex items-start text-slate-600">
+                    <li key={feature} className="flex items-start text-slate-400">
                       <svg
                         className="w-5 h-5 text-accent mr-2 flex-shrink-0 mt-0.5"
                         fill="none"

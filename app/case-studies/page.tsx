@@ -80,7 +80,7 @@ export default function CaseStudiesPage() {
   const { t } = useLanguage()
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-ink via-paper to-ink">
       <Navbar />
 
       {/* Hero */}
@@ -90,7 +90,7 @@ export default function CaseStudiesPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               {t('caseStudies.title')}
             </h1>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               {t('caseStudies.subtitle')}
             </p>
           </motion.div>
@@ -123,7 +123,7 @@ export default function CaseStudiesPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               {t('caseStudies.cta')}
             </h2>
-            <p className="text-lg text-slate-600 mb-8">
+            <p className="text-lg text-slate-400 mb-8">
               {t('caseStudies.ctaDesc')}
             </p>
             <a

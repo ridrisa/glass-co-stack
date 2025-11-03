@@ -14,7 +14,7 @@ export default function ConfiguratorPage() {
   const [activeTab, setActiveTab] = useState<'configurator' | 'calculator'>('configurator')
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-ink via-paper to-ink">
       <Navbar />
 
       {/* Hero Section */}
@@ -24,7 +24,7 @@ export default function ConfiguratorPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               {t('configurator.title')}
             </h1>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-8">
               {t('configurator.subtitle')}
             </p>
           </motion.div>
@@ -39,7 +39,7 @@ export default function ConfiguratorPage() {
             className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all ${
               activeTab === 'configurator'
                 ? 'bg-accent text-white shadow-lg'
-                : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
+                : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
             }`}
           >
             {t('configurator.glassTab')}
@@ -49,7 +49,7 @@ export default function ConfiguratorPage() {
             className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all ${
               activeTab === 'calculator'
                 ? 'bg-accent text-white shadow-lg'
-                : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
+                : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
             }`}
           >
             {t('configurator.calcTab')}
@@ -92,7 +92,7 @@ export default function ConfiguratorPage() {
 
           <div className="mt-8 p-6 rounded-xl bg-saudi-green/10 border border-saudi-green/30">
             <h4 className="font-semibold text-white mb-2">Need Precise Specifications?</h4>
-            <p className="text-sm text-slate-600 mb-4">
+            <p className="text-sm text-slate-400 mb-4">
               These tools provide indicative values for planning purposes. For project-specific
               engineering calculations, detailed specifications, and certified test reports,
               contact our technical team.
