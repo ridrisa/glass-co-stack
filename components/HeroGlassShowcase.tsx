@@ -64,7 +64,7 @@ export default function HeroGlassShowcase({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-6xl font-semibold mb-6"
+          className="text-display-sm md:text-display-md font-bold mb-6 text-white"
         >
           {title}
         </motion.h1>
@@ -73,7 +73,7 @@ export default function HeroGlassShowcase({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-4 max-w-2xl text-white/85 text-lg md:text-xl mb-8"
+          className="mt-4 max-w-2xl text-slate-200 text-body-lg md:text-body-xl mb-8"
         >
           {subtitle}
         </motion.p>
@@ -111,13 +111,13 @@ export default function HeroGlassShowcase({
           {kpis.map((kpi, idx) => (
             <div
               key={kpi.label}
-              className="rounded-xl border border-slate-200 bg-slate-50 p-4 backdrop-blur-sm"
+              className="glass-3 rounded-xl p-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-glass-md"
             >
-              <div className="text-3xl font-semibold text-accent">
+              <div className="text-h2 font-bold text-accent">
                 {kpi.value}
-                {kpi.suffix && <span className="text-2xl">{kpi.suffix}</span>}
+                {kpi.suffix && <span className="text-h3 text-accent/90">{kpi.suffix}</span>}
               </div>
-              <div className="text-sm text-slate-400 mt-1">{kpi.label}</div>
+              <div className="text-body-sm text-slate-300 mt-2">{kpi.label}</div>
             </div>
           ))}
         </motion.div>

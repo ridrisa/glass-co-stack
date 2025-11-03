@@ -52,22 +52,22 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.h2
             {...fadeUp}
-            className="text-3xl md:text-4xl font-bold text-white text-center mb-12"
+            className="text-h1 md:text-display-sm font-bold text-white text-center mb-16"
           >
             {t('home.highlights')}
           </motion.h2>
           <div className="grid gap-6 md:grid-cols-3">
             <motion.div {...glassFloat} transition={{ delay: 0.1 }}>
               <GlassShimmer className="p-6 h-full" enable3DTilt maxTilt={10}>
-                <h3 className="text-xl font-semibold text-white mb-2">Low-E IGU (DGU)</h3>
-                <p className="text-slate-300 mb-4">
-                  {lang === 'en' 
+                <h3 className="text-h3 font-semibold text-white mb-3">Low-E IGU (DGU)</h3>
+                <p className="text-body text-slate-300 mb-4">
+                  {lang === 'en'
                     ? 'U-value 1.3 W/m²K · LT 68% · SHGC 0.34'
                     : 'قيمة U 1.3 واط/م²·كلفن · انتقال الضوء 68% · SHGC 0.34'}
                 </p>
-                <Link 
+                <Link
                   href="/products"
-                  className="text-accent hover:text-accent/80 text-sm font-medium"
+                  className="text-accent hover:text-accent/80 text-body-sm font-semibold inline-flex items-center gap-1 group"
                 >
                   {t('common.learnMore')} →
                 </Link>
@@ -75,10 +75,10 @@ export default function Home() {
             </motion.div>
             <motion.div {...glassFloat} transition={{ delay: 0.2 }}>
               <GlassShimmer className="p-6 h-full" enable3DTilt maxTilt={10}>
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-h3 font-semibold text-white mb-3">
                   {lang === 'en' ? 'Tempered & Laminated' : 'مقسى ومصفح'}
                 </h3>
-                <p className="text-slate-300 mb-4">
+                <p className="text-body text-slate-300 mb-4">
                   {lang === 'en'
                     ? 'EN/ASTM compliant safety glass for façades and barriers.'
                     : 'زجاج أمان متوافق مع EN/ASTM للواجهات والحواجز.'}
@@ -93,10 +93,10 @@ export default function Home() {
             </motion.div>
             <motion.div {...glassFloat} transition={{ delay: 0.3 }}>
               <GlassShimmer className="p-6 h-full" enable3DTilt maxTilt={10}>
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-h3 font-semibold text-white mb-3">
                   {lang === 'en' ? 'Point-Fixed / Spider Systems' : 'أنظمة النقطة الثابتة / العنكبوتية'}
                 </h3>
-                <p className="text-slate-300 mb-4">
+                <p className="text-body text-slate-300 mb-4">
                   {lang === 'en' 
                     ? 'Minimal hardware, maximum transparency.'
                     : 'حد أدنى من المعدات، أقصى شفافية.'}
@@ -116,7 +116,7 @@ export default function Home() {
       {/* Featured Systems with Refraction */}
       <section>
         <div className="max-w-7xl mx-auto">
-          <motion.h2 {...fadeUp} className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+          <motion.h2 {...fadeUp} className="text-h1 md:text-display-sm font-bold text-white text-center mb-16">
             {t('home.featured')}
           </motion.h2>
           <div className="grid gap-6 md:grid-cols-3">
