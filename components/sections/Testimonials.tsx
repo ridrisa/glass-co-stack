@@ -72,12 +72,12 @@ export default function Testimonials() {
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIndex}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, x: 50, scale: 0.95 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, x: -50, scale: 0.95 }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <GlassShimmer className="p-8 md:p-12">
+              <GlassShimmer className="p-8 md:p-12 card-glow-hover">
                 {/* Rating Stars */}
                 <div className="flex justify-center gap-1 mb-6">
                   {[...Array(testimonials[activeIndex].rating)].map((_, i) => (
@@ -115,39 +115,45 @@ export default function Testimonials() {
 
           {/* Navigation */}
           <div className="flex items-center justify-center gap-4 mt-8">
-            <button
+            <motion.button
               onClick={prevTestimonial}
-              className="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-3 rounded-xl glass-2 hover:glass-3 text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent"
               aria-label="Previous testimonial"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-            </button>
+            </motion.button>
 
             {/* Dots */}
             <div className="flex gap-2">
               {testimonials.map((_, idx) => (
-                <button
+                <motion.button
                   key={idx}
                   onClick={() => setActiveIndex(idx)}
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
                   className={`w-2 h-2 rounded-full transition-all duration-300 focus:outline-none ${
-                    idx === activeIndex ? 'bg-accent w-8' : 'bg-white/30 hover:bg-slate-500'
+                    idx === activeIndex ? 'bg-accent w-8' : 'bg-white/30 hover:bg-white/50'
                   }`}
                   aria-label={`Go to testimonial ${idx + 1}`}
                 />
               ))}
             </div>
 
-            <button
+            <motion.button
               onClick={nextTestimonial}
-              className="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-3 rounded-xl glass-2 hover:glass-3 text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent"
               aria-label="Next testimonial"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

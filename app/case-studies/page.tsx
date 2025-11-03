@@ -3,6 +3,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CaseStudyCard from '@/components/sections/CaseStudyCard'
+import PremiumButton from '@/components/ui/PremiumButton'
 import { motion } from 'framer-motion'
 import { fadeUp } from '@/lib/motionPresets'
 import { useLanguage } from '@/lib/language'
@@ -126,12 +127,9 @@ export default function CaseStudiesPage() {
             <p className="text-body-lg text-slate-300 max-w-content mx-auto mb-10">
               {t('caseStudies.ctaDesc')}
             </p>
-            <a
-              href="/contact"
-              className="inline-block px-10 py-4 rounded-xl bg-accent text-white font-semibold text-lg hover:bg-accent/90 transition-colors shadow-lg shadow-accent/30"
-            >
+            <PremiumButton href="/contact" size="lg">
               {t('caseStudies.ctaButton')}
-            </a>
+            </PremiumButton>
           </motion.div>
         </div>
       </section>

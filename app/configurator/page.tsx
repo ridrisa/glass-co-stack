@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import GlassConfigurator from '@/components/interactive/GlassConfigurator'
 import SpecsCalculator from '@/components/interactive/SpecsCalculator'
+import PremiumButton from '@/components/ui/PremiumButton'
 import { motion } from 'framer-motion'
 import { fadeUp } from '@/lib/motionPresets'
 import { useState } from 'react'
@@ -67,21 +68,21 @@ export default function ConfiguratorPage() {
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="glass-2 p-6 rounded-xl">
+            <div className="glass-2 p-6 rounded-xl card-hover card-glow-hover">
               <div className="text-4xl mb-3">⚡</div>
               <h3 className="text-h4 font-semibold text-white mb-2">Instant Results</h3>
               <p className="text-body-sm text-slate-400">
                 Get immediate feedback on your glass configuration with real-time calculations
               </p>
             </div>
-            <div className="glass-2 p-6 rounded-xl">
+            <div className="glass-2 p-6 rounded-xl card-hover card-glow-hover">
               <div className="text-4xl mb-3">📊</div>
               <h3 className="text-h4 font-semibold text-white mb-2">Technical Data</h3>
               <p className="text-body-sm text-slate-400">
                 Access indicative U-values, SHGC, light transmission, and weight calculations
               </p>
             </div>
-            <div className="glass-2 p-6 rounded-xl">
+            <div className="glass-2 p-6 rounded-xl card-hover card-glow-hover">
               <div className="text-4xl mb-3">🎯</div>
               <h3 className="text-h4 font-semibold text-white mb-2">Project Planning</h3>
               <p className="text-body-sm text-slate-400">
@@ -97,12 +98,9 @@ export default function ConfiguratorPage() {
               engineering calculations, detailed specifications, and certified test reports,
               contact our technical team.
             </p>
-            <a
-              href="/contact"
-              className="inline-block px-6 py-3 rounded-xl bg-accent text-white font-semibold hover:bg-accent/90 transition-colors"
-            >
+            <PremiumButton href="/contact" size="md">
               Request Engineering Support
-            </a>
+            </PremiumButton>
           </div>
         </div>
       </section>

@@ -11,6 +11,7 @@ import ClientLogos from '@/components/sections/ClientLogos'
 import Testimonials from '@/components/sections/Testimonials'
 import CompanyStats from '@/components/sections/CompanyStats'
 import QualityCommitment from '@/components/sections/QualityCommitment'
+import PremiumButton from '@/components/ui/PremiumButton'
 import { glassFloat, fadeUp } from '@/lib/motionPresets'
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
@@ -58,7 +59,7 @@ export default function Home() {
           </motion.h2>
           <div className="grid gap-6 md:grid-cols-3">
             <motion.div {...glassFloat} transition={{ delay: 0.1 }}>
-              <GlassShimmer className="p-6 h-full" enable3DTilt maxTilt={10}>
+              <GlassShimmer className="p-6 h-full card-gradient-hover card-glow-hover" enable3DTilt maxTilt={10}>
                 <h3 className="text-h3 font-semibold text-white mb-3">Low-E IGU (DGU)</h3>
                 <p className="text-body text-slate-300 mb-4">
                   {lang === 'en'
@@ -74,7 +75,7 @@ export default function Home() {
               </GlassShimmer>
             </motion.div>
             <motion.div {...glassFloat} transition={{ delay: 0.2 }}>
-              <GlassShimmer className="p-6 h-full" enable3DTilt maxTilt={10}>
+              <GlassShimmer className="p-6 h-full card-gradient-hover card-glow-hover" enable3DTilt maxTilt={10}>
                 <h3 className="text-h3 font-semibold text-white mb-3">
                   {lang === 'en' ? 'Tempered & Laminated' : 'مقسى ومصفح'}
                 </h3>
@@ -92,7 +93,7 @@ export default function Home() {
               </GlassShimmer>
             </motion.div>
             <motion.div {...glassFloat} transition={{ delay: 0.3 }}>
-              <GlassShimmer className="p-6 h-full" enable3DTilt maxTilt={10}>
+              <GlassShimmer className="p-6 h-full card-gradient-hover card-glow-hover" enable3DTilt maxTilt={10}>
                 <h3 className="text-h3 font-semibold text-white mb-3">
                   {lang === 'en' ? 'Point-Fixed / Spider Systems' : 'أنظمة النقطة الثابتة / العنكبوتية'}
                 </h3>
@@ -120,35 +121,38 @@ export default function Home() {
             {t('home.featured')}
           </motion.h2>
           <div className="grid gap-6 md:grid-cols-3">
-            <RefractionCard
-              image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop"
-              title={lang === 'en' ? 'Curtain Wall (Unitized)' : 'جدار الستائر (موحد)'}
-              subtitle={lang === 'en' ? 'Rapid install · superior tolerance' : 'تركيب سريع · تفاوت فائق'}
-              enable3DTilt
-              maxTilt={12}
-            />
-            <RefractionCard
-              image="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop"
-              title={lang === 'en' ? 'Frameless Partitions' : 'أقسام بدون إطار'}
-              subtitle={lang === 'en' ? 'Office, retail, hospitality' : 'مكتبية، تجارية، ضيافة'}
-              enable3DTilt
-              maxTilt={12}
-            />
-            <RefractionCard
-              image="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=600&fit=crop"
-              title={lang === 'en' ? 'Skylights & Canopies' : 'منورات ومظلات'}
-              subtitle={lang === 'en' ? 'Daylight + weatherproofing' : 'ضوء النهار + مقاومة الطقس'}
-              enable3DTilt
-              maxTilt={12}
-            />
+            <div className="card-hover card-gradient-hover">
+              <RefractionCard
+                image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop"
+                title={lang === 'en' ? 'Curtain Wall (Unitized)' : 'جدار الستائر (موحد)'}
+                subtitle={lang === 'en' ? 'Rapid install · superior tolerance' : 'تركيب سريع · تفاوت فائق'}
+                enable3DTilt
+                maxTilt={12}
+              />
+            </div>
+            <div className="card-hover card-gradient-hover">
+              <RefractionCard
+                image="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop"
+                title={lang === 'en' ? 'Frameless Partitions' : 'أقسام بدون إطار'}
+                subtitle={lang === 'en' ? 'Office, retail, hospitality' : 'مكتبية، تجارية، ضيافة'}
+                enable3DTilt
+                maxTilt={12}
+              />
+            </div>
+            <div className="card-hover card-gradient-hover">
+              <RefractionCard
+                image="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=600&fit=crop"
+                title={lang === 'en' ? 'Skylights & Canopies' : 'منورات ومظلات'}
+                subtitle={lang === 'en' ? 'Daylight + weatherproofing' : 'ضوء النهار + مقاومة الطقس'}
+                enable3DTilt
+                maxTilt={12}
+              />
+            </div>
           </div>
           <motion.div {...glassFloat} className="text-center mt-12">
-            <Link
-              href="/systems"
-              className="inline-block px-8 py-3 rounded-xl bg-accent text-white font-semibold hover:bg-accent/90 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
-            >
+            <PremiumButton href="/systems" size="lg">
               {t('common.viewAll')} →
-            </Link>
+            </PremiumButton>
           </motion.div>
         </div>
       </section>
@@ -210,12 +214,9 @@ export default function Home() {
               : 'حول رؤيتك إلى واقع معماري مع أنظمة الزجاج المميزة. تساهم في تحويل رؤية 2030 للمملكة إلى وجهة عالمية المستوى.'}
           </motion.p>
           <motion.div {...glassFloat} transition={{ delay: 0.2 }}>
-            <Link
-              href="/contact"
-              className="inline-block px-10 py-4 rounded-xl bg-accent text-white font-semibold text-lg hover:bg-accent/90 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink shadow-card"
-            >
+            <PremiumButton href="/contact" size="lg">
               {t('home.cta.button')}
-            </Link>
+            </PremiumButton>
           </motion.div>
         </div>
       </section>
