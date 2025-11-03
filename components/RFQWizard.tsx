@@ -199,7 +199,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                 <div
                   className={`w-8 h-8 rounded-full flex items-center justify-center font-semibold ${
                     s <= step
-                      ? 'bg-accent text-ink'
+                      ? 'bg-accent text-white'
                       : 'bg-white/20 text-slate-400'
                   }`}
                 >
@@ -450,7 +450,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
                     type="file"
                     multiple
                     onChange={handleFileChange}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white focus:outline-none focus:ring-2 focus:ring-accent file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-accent file:text-ink"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-300 text-white focus:outline-none focus:ring-2 focus:ring-accent file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-accent file:text-slate-900"
                   />
                   <p className="text-slate-500 text-sm mt-1">
                     PDF, DOC, images (max 10MB per file)
@@ -497,7 +497,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
               <button
                 onClick={nextStep}
                 disabled={!validateStep(step)}
-                className="px-6 py-3 rounded-lg bg-accent text-ink font-semibold hover:bg-accent/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+                className="px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
               >
                 Next →
               </button>
@@ -505,7 +505,7 @@ export default function RFQWizard({ onSubmit, apiEndpoint }: Props) {
               <button
                 onClick={handleSubmit}
                 disabled={status === 'loading' || !validateStep(4)}
-                className="px-6 py-3 rounded-lg bg-accent text-ink font-semibold hover:bg-accent/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+                className="px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
               >
                 {status === 'loading' ? 'Submitting...' : 'Submit RFQ'}
               </button>

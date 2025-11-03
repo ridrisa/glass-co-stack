@@ -99,7 +99,7 @@ export default function LogoShowcase() {
             className="bg-white border-2 border-gray-200 p-12 rounded-2xl"
           >
             <p className="text-xs text-gray-400 mb-6">On Light Background (Reversed)</p>
-            <h2 className="text-5xl font-bold text-ink text-center">
+            <h2 className="text-5xl font-bold text-slate-900 text-center">
               GLAZE<span className="text-accent relative">
                 //
                 <span className="absolute inset-0 blur-sm opacity-50">//</span>

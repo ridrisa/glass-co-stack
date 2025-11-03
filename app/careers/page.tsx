@@ -114,7 +114,7 @@ export default function CareersPage() {
                         <span>{position.type}</span>
                       </div>
                     </div>
-                    <button className="mt-4 md:mt-0 px-6 py-2 rounded-lg bg-accent text-ink font-semibold hover:bg-accent/90 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink">
+                    <button className="mt-4 md:mt-0 px-6 py-2 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink">
                       Apply Now
                     </button>
                   </div>

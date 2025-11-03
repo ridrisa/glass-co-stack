@@ -145,7 +145,7 @@ export default function Home() {
           <motion.div {...glassFloat} className="text-center mt-12">
             <Link
               href="/systems"
-              className="inline-block px-8 py-3 rounded-xl bg-accent text-ink font-semibold hover:bg-accent/90 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+              className="inline-block px-8 py-3 rounded-xl bg-accent text-white font-semibold hover:bg-accent/90 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
             >
               {t('common.viewAll')} →
             </Link>
@@ -212,7 +212,7 @@ export default function Home() {
           <motion.div {...glassFloat} transition={{ delay: 0.2 }}>
             <Link
               href="/contact"
-              className="inline-block px-10 py-4 rounded-xl bg-accent text-ink font-semibold text-lg hover:bg-accent/90 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink shadow-card"
+              className="inline-block px-10 py-4 rounded-xl bg-accent text-white font-semibold text-lg hover:bg-accent/90 transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink shadow-card"
             >
               {t('home.cta.button')}
             </Link>

@@ -45,7 +45,7 @@ export default function CaseStudyCard({
               alt={title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-accent text-ink text-sm font-semibold">
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-accent text-white text-sm font-semibold">
               {year}
             </div>
           </div>

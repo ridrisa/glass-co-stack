@@ -38,7 +38,7 @@ export default function ConfiguratorPage() {
             onClick={() => setActiveTab('configurator')}
             className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all ${
               activeTab === 'configurator'
-                ? 'bg-accent text-ink shadow-lg'
+                ? 'bg-accent text-white shadow-lg'
                 : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
             }`}
           >
@@ -48,7 +48,7 @@ export default function ConfiguratorPage() {
             onClick={() => setActiveTab('calculator')}
             className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all ${
               activeTab === 'calculator'
-                ? 'bg-accent text-ink shadow-lg'
+                ? 'bg-accent text-white shadow-lg'
                 : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
             }`}
           >
@@ -99,7 +99,7 @@ export default function ConfiguratorPage() {
             </p>
             <a
               href="/contact"
-              className="inline-block px-6 py-3 rounded-xl bg-accent text-ink font-semibold hover:bg-accent/90 transition-colors"
+              className="inline-block px-6 py-3 rounded-xl bg-accent text-white font-semibold hover:bg-accent/90 transition-colors"
             >
               Request Engineering Support
             </a>

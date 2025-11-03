@@ -128,7 +128,7 @@ export default function CaseStudiesPage() {
             </p>
             <a
               href="/contact"
-              className="inline-block px-10 py-4 rounded-xl bg-accent text-ink font-semibold text-lg hover:bg-accent/90 transition-colors shadow-lg shadow-accent/30"
+              className="inline-block px-10 py-4 rounded-xl bg-accent text-white font-semibold text-lg hover:bg-accent/90 transition-colors shadow-lg shadow-accent/30"
             >
               {t('caseStudies.ctaButton')}
             </a>

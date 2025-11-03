@@ -43,7 +43,7 @@ export default function ProjectCard({ project, index = 0 }: Props) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
           {project.year && (
-            <div className="absolute top-4 right-4 bg-accent/90 text-ink px-3 py-1 rounded-lg text-sm font-semibold">
+            <div className="absolute top-4 right-4 bg-accent/90 text-slate-900 px-3 py-1 rounded-lg text-sm font-semibold">
               {project.year}
             </div>
           )}

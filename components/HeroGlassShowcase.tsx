@@ -86,7 +86,7 @@ export default function HeroGlassShowcase({
           {ctaHref ? (
             <Link
               href={ctaHref}
-              className="inline-block mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-ink shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+              className="inline-block mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-slate-900 shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
               aria-label={ctaText}
             >
               {ctaText}
@@ -94,7 +94,7 @@ export default function HeroGlassShowcase({
           ) : (
             <button
               onClick={handleCta}
-              className="mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-ink shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
+              className="mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-slate-900 shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
               aria-label={ctaText}
             >
               {ctaText}

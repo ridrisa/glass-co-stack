@@ -100,7 +100,7 @@ export default function BrandGuidelinesPage() {
                 }}
                 className={`px-6 py-3 rounded-xl whitespace-nowrap transition-all duration-300 ${
                   activeSection === section.id
-                    ? 'bg-accent text-ink font-semibold'
+                    ? 'bg-accent text-white font-semibold'
                     : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                 }`}
               >

@@ -57,7 +57,7 @@ export default function SpecsCalculator() {
           onClick={() => setCalcType('u-value')}
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all ${
             calcType === 'u-value'
-              ? 'bg-accent text-ink'
+              ? 'bg-accent text-white'
               : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
           }`}
         >
@@ -67,7 +67,7 @@ export default function SpecsCalculator() {
           onClick={() => setCalcType('weight')}
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all ${
             calcType === 'weight'
-              ? 'bg-accent text-ink'
+              ? 'bg-accent text-white'
               : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
           }`}
         >
@@ -77,7 +77,7 @@ export default function SpecsCalculator() {
           onClick={() => setCalcType('area')}
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all ${
             calcType === 'area'
-              ? 'bg-accent text-ink'
+              ? 'bg-accent text-white'
               : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
           }`}
         >

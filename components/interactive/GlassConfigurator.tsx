@@ -193,7 +193,7 @@ export default function GlassConfigurator() {
 
           <button
             onClick={handleGenerate}
-            className="w-full py-4 rounded-xl bg-accent text-ink font-semibold hover:bg-accent/90 transition-colors"
+            className="w-full py-4 rounded-xl bg-accent text-white font-semibold hover:bg-accent/90 transition-colors"
           >
             Generate Specifications
           </button>
@@ -262,7 +262,7 @@ export default function GlassConfigurator() {
                   </p>
                 </div>
 
-                <button className="w-full mt-4 py-3 rounded-xl border-2 border-accent text-accent font-semibold hover:bg-accent hover:text-ink transition-colors">
+                <button className="w-full mt-4 py-3 rounded-xl border-2 border-accent text-accent font-semibold hover:bg-accent hover:text-slate-900 transition-colors">
                   Request Detailed Quote
                 </button>
               </GlassShimmer>

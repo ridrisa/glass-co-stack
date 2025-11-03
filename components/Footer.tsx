@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold text-white mb-2">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">
               GLAZE<span className="text-accent relative">
                 //
                 <span className="absolute inset-0 blur-sm opacity-50">//</span>
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">{t('nav.products')}</h4>
+            <h4 className="font-semibold text-slate-900 mb-4">{t('nav.products')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/products" className="text-slate-600 hover:text-accent transition-colors">
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">{t('nav.systems')}</h4>
+            <h4 className="font-semibold text-slate-900 mb-4">{t('nav.systems')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/systems" className="text-slate-600 hover:text-accent transition-colors">
@@ -89,7 +89,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">{lang === 'en' ? 'Resources' : 'الموارد'}</h4>
+            <h4 className="font-semibold text-slate-900 mb-4">{lang === 'en' ? 'Resources' : 'الموارد'}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/configurator" className="text-slate-600 hover:text-accent transition-colors">
@@ -115,7 +115,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">{lang === 'en' ? 'Contact' : 'اتصل بنا'}</h4>
+            <h4 className="font-semibold text-slate-900 mb-4">{lang === 'en' ? 'Contact' : 'اتصل بنا'}</h4>
             <ul className="space-y-2 text-sm text-slate-600">
               <li>
                 <a href="mailto:info@glazepro.sa" className="hover:text-accent transition-colors">
@@ -160,11 +160,11 @@ export default function Footer() {
             <Link href="/about" className="text-slate-500 hover:text-accent transition-colors">
               {t('nav.about')}
             </Link>
-            <span className="text-white/30">|</span>
+            <span className="text-slate-900/30">|</span>
             <a href="#" className="text-slate-500 hover:text-accent transition-colors">
               {lang === 'en' ? 'Privacy' : 'الخصوصية'}
             </a>
-            <span className="text-white/30">|</span>
+            <span className="text-slate-900/30">|</span>
             <a href="#" className="text-slate-500 hover:text-accent transition-colors">
               {lang === 'en' ? 'Terms' : 'الشروط'}
             </a>
