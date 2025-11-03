@@ -46,7 +46,7 @@ export default function RefractionCard({
         transformStyle: 'preserve-3d',
         perspective: '1000px',
       }}
-      className={`relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm ${className}`}
+      className={`relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 backdrop-blur-sm ${className}`}
     >
       <svg width="0" height="0" className="absolute">
         <filter id={filtId}>
@@ -80,7 +80,7 @@ export default function RefractionCard({
         style={{ transform: 'translateZ(40px)' }}
       >
         <div className="text-white font-semibold text-lg">{title}</div>
-        {subtitle && <div className="text-white/80 text-sm mt-1">{subtitle}</div>}
+        {subtitle && <div className="text-slate-700 text-sm mt-1">{subtitle}</div>}
       </figcaption>
       
       {/* 3D Glare Effect */}

@@ -53,7 +53,7 @@ export default function QualityBadges({ badges, title, className = '' }: Props) 
               {badge.icon && <div className="mb-4">{badge.icon}</div>}
               <h3 className="text-white font-semibold mb-1">{badge.name}</h3>
               {badge.description && (
-                <p className="text-white/70 text-sm">{badge.description}</p>
+                <p className="text-slate-600 text-sm">{badge.description}</p>
               )}
             </motion.div>
           ))}

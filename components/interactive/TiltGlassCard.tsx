@@ -82,7 +82,7 @@ rotateY: prefersReduced ? 0 : ySpring,
 }}
 className={[
 "relative rounded-3xl p-5 sm:p-6",
-"bg-white/10 backdrop-blur-md border border-white/20",
+"bg-slate-100 backdrop-blur-md border border-slate-300",
 "shadow-glass hover:shadow-xl transition-shadow",
 "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cobalt/40",
 "sheen",

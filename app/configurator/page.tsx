@@ -24,7 +24,7 @@ export default function ConfiguratorPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               {t('configurator.title')}
             </h1>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
               {t('configurator.subtitle')}
             </p>
           </motion.div>
@@ -39,7 +39,7 @@ export default function ConfiguratorPage() {
             className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all ${
               activeTab === 'configurator'
                 ? 'bg-accent text-ink shadow-lg'
-                : 'bg-white/5 text-white/70 hover:bg-white/10'
+                : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
             }`}
           >
             {t('configurator.glassTab')}
@@ -49,7 +49,7 @@ export default function ConfiguratorPage() {
             className={`px-8 py-4 rounded-xl font-semibold text-lg transition-all ${
               activeTab === 'calculator'
                 ? 'bg-accent text-ink shadow-lg'
-                : 'bg-white/5 text-white/70 hover:bg-white/10'
+                : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
             }`}
           >
             {t('configurator.calcTab')}
@@ -67,24 +67,24 @@ export default function ConfiguratorPage() {
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-xl bg-white/5 border border-white/10">
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
               <div className="text-3xl mb-3">⚡</div>
               <h3 className="text-lg font-semibold text-white mb-2">Instant Results</h3>
-              <p className="text-sm text-white/60">
+              <p className="text-sm text-slate-500">
                 Get immediate feedback on your glass configuration with real-time calculations
               </p>
             </div>
-            <div className="p-6 rounded-xl bg-white/5 border border-white/10">
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
               <div className="text-3xl mb-3">📊</div>
               <h3 className="text-lg font-semibold text-white mb-2">Technical Data</h3>
-              <p className="text-sm text-white/60">
+              <p className="text-sm text-slate-500">
                 Access indicative U-values, SHGC, light transmission, and weight calculations
               </p>
             </div>
-            <div className="p-6 rounded-xl bg-white/5 border border-white/10">
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
               <div className="text-3xl mb-3">🎯</div>
               <h3 className="text-lg font-semibold text-white mb-2">Project Planning</h3>
-              <p className="text-sm text-white/60">
+              <p className="text-sm text-slate-500">
                 Perfect for early-stage planning and budget estimation for your project
               </p>
             </div>
@@ -92,7 +92,7 @@ export default function ConfiguratorPage() {
 
           <div className="mt-8 p-6 rounded-xl bg-saudi-green/10 border border-saudi-green/30">
             <h4 className="font-semibold text-white mb-2">Need Precise Specifications?</h4>
-            <p className="text-sm text-white/70 mb-4">
+            <p className="text-sm text-slate-600 mb-4">
               These tools provide indicative values for planning purposes. For project-specific
               engineering calculations, detailed specifications, and certified test reports,
               contact our technical team.

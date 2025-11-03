@@ -127,12 +127,12 @@ export default function ProjectsPage() {
           <motion.h1 {...fadeUp} className="text-3xl md:text-5xl font-bold text-white mb-4">
             {t('projects.title')}
           </motion.h1>
-          <motion.p {...fadeUp} className="text-white/80 max-w-3xl text-lg mb-8">
+          <motion.p {...fadeUp} className="text-slate-700 max-w-3xl text-lg mb-8">
             {t('projects.subtitle')}
           </motion.p>
           <div className="mt-4 flex flex-wrap gap-3">
             <select
-              className="rounded-lg bg-white/10 px-3 py-2 text-white border border-white/20 focus:outline-none focus:ring-2 focus:ring-accent"
+              className="rounded-lg bg-slate-100 px-3 py-2 text-white border border-slate-300 focus:outline-none focus:ring-2 focus:ring-accent"
               value={filter.sector ?? ''}
               onChange={(e) =>
                 setFilter((f) => ({
@@ -150,7 +150,7 @@ export default function ProjectsPage() {
               <option value="Industrial">{lang === 'en' ? 'Industrial' : 'صناعي'}</option>
             </select>
             <select
-              className="rounded-lg bg-white/10 px-3 py-2 text-white border border-white/20 focus:outline-none focus:ring-2 focus:ring-accent"
+              className="rounded-lg bg-slate-100 px-3 py-2 text-white border border-slate-300 focus:outline-none focus:ring-2 focus:ring-accent"
               value={filter.system ?? ''}
               onChange={(e) =>
                 setFilter((f) => ({
@@ -168,7 +168,7 @@ export default function ProjectsPage() {
               <option value="Balustrade">{lang === 'en' ? 'Balustrade' : 'درابزين'}</option>
             </select>
             <select
-              className="rounded-lg bg-white/10 px-3 py-2 text-white border border-white/20 focus:outline-none focus:ring-2 focus:ring-accent"
+              className="rounded-lg bg-slate-100 px-3 py-2 text-white border border-slate-300 focus:outline-none focus:ring-2 focus:ring-accent"
               value={filter.year?.toString() ?? ''}
               onChange={(e) =>
                 setFilter((f) => ({
@@ -184,7 +184,7 @@ export default function ProjectsPage() {
               ))}
             </select>
             <select
-              className="rounded-lg bg-white/10 px-3 py-2 text-white border border-white/20 focus:outline-none focus:ring-2 focus:ring-accent"
+              className="rounded-lg bg-slate-100 px-3 py-2 text-white border border-slate-300 focus:outline-none focus:ring-2 focus:ring-accent"
               value={filter.city ?? ''}
               onChange={(e) =>
                 setFilter((f) => ({
@@ -212,17 +212,17 @@ export default function ProjectsPage() {
                   <div className="flex items-start justify-between gap-4 mb-3">
                     <div className="flex-1">
                       <div className="text-lg font-semibold text-white">{p.name}</div>
-                      <div className="text-white/70 text-sm mt-1">
+                      <div className="text-slate-600 text-sm mt-1">
                         {p.city} · {p.year}
                       </div>
                     </div>
-                    <span className="rounded-lg bg-white/10 px-3 py-1 text-sm text-white whitespace-nowrap">
+                    <span className="rounded-lg bg-slate-100 px-3 py-1 text-sm text-white whitespace-nowrap">
                       {p.system}
                     </span>
                   </div>
-                  <div className="mt-3 text-white/80 text-sm">
+                  <div className="mt-3 text-slate-700 text-sm">
                     <div className="mb-1">
-                      <span className="text-white/70">{lang === 'en' ? 'Sector' : 'القطاع'}: </span>
+                      <span className="text-slate-600">{lang === 'en' ? 'Sector' : 'القطاع'}: </span>
                       <span>{lang === 'en' ? p.sector : {
                         'Commercial': 'تجاري',
                         'Hospitality': 'ضيافة',
@@ -232,7 +232,7 @@ export default function ProjectsPage() {
                       }[p.sector]}</span>
                     </div>
                     <div>
-                      <span className="text-white/70">{lang === 'en' ? 'Area' : 'المساحة'}: </span>
+                      <span className="text-slate-600">{lang === 'en' ? 'Area' : 'المساحة'}: </span>
                       <span>{p.areaSqm.toLocaleString()} m²</span>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export default function ProjectsPage() {
             ))}
           </div>
           {list.length === 0 && (
-            <div className="text-center py-12 text-white/60">
+            <div className="text-center py-12 text-slate-500">
               {lang === 'en' ? 'No projects match your filters.' : 'لا توجد مشاريع تطابق المرشحات.'}
             </div>
           )}

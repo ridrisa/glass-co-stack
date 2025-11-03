@@ -60,8 +60,8 @@ export default function QuoteWizard() {
         <RFQWizard onSubmit={handleSubmit} />
       </GlassShimmer>
       {exportData && (
-        <div className="mt-4 p-4 rounded-lg bg-white/5 border border-white/10">
-          <p className="text-sm text-white/70 mb-2">✓ RFQ data exported as JSON</p>
+        <div className="mt-4 p-4 rounded-lg bg-slate-50 border border-slate-200">
+          <p className="text-sm text-slate-600 mb-2">✓ RFQ data exported as JSON</p>
         </div>
       )}
     </div>

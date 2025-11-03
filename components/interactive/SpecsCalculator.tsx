@@ -48,7 +48,7 @@ export default function SpecsCalculator() {
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-8">
         <h3 className="text-2xl font-bold text-white mb-2">Quick Specs Calculator</h3>
-        <p className="text-white/60">Get instant technical calculations for your project</p>
+        <p className="text-slate-500">Get instant technical calculations for your project</p>
       </div>
 
       {/* Calculator Type Selector */}
@@ -58,7 +58,7 @@ export default function SpecsCalculator() {
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all ${
             calcType === 'u-value'
               ? 'bg-accent text-ink'
-              : 'bg-white/5 text-white/70 hover:bg-white/10'
+              : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
           }`}
         >
           U-Value
@@ -68,7 +68,7 @@ export default function SpecsCalculator() {
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all ${
             calcType === 'weight'
               ? 'bg-accent text-ink'
-              : 'bg-white/5 text-white/70 hover:bg-white/10'
+              : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
           }`}
         >
           Weight
@@ -78,7 +78,7 @@ export default function SpecsCalculator() {
           className={`flex-1 py-3 px-4 rounded-xl font-semibold transition-all ${
             calcType === 'area'
               ? 'bg-accent text-ink'
-              : 'bg-white/5 text-white/70 hover:bg-white/10'
+              : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
           }`}
         >
           Area
@@ -103,7 +103,7 @@ export default function SpecsCalculator() {
                 onChange={(e) =>
                   setInputs({ ...inputs, glassThickness: parseInt(e.target.value) || 0 })
                 }
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border-2 border-white/10 text-white focus:border-accent focus:outline-none"
+                className="w-full px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-200 text-white focus:border-accent focus:outline-none"
               />
             </div>
 
@@ -115,7 +115,7 @@ export default function SpecsCalculator() {
                 onChange={(e) =>
                   setInputs({ ...inputs, airGap: parseInt(e.target.value) || 0 })
                 }
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border-2 border-white/10 text-white focus:border-accent focus:outline-none"
+                className="w-full px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-200 text-white focus:border-accent focus:outline-none"
               />
             </div>
 
@@ -134,11 +134,11 @@ export default function SpecsCalculator() {
 
             <div className="mt-8 p-6 rounded-xl bg-accent/10 border-2 border-accent">
               <div className="text-center">
-                <div className="text-sm text-white/70 mb-2">Indicative U-Value</div>
+                <div className="text-sm text-slate-600 mb-2">Indicative U-Value</div>
                 <div className="text-4xl font-bold text-accent mb-1">
                   {calculateUValue()}
                 </div>
-                <div className="text-sm text-white/60">W/m²·K</div>
+                <div className="text-sm text-slate-500">W/m²·K</div>
               </div>
             </div>
           </motion.div>
@@ -160,7 +160,7 @@ export default function SpecsCalculator() {
                   onChange={(e) =>
                     setInputs({ ...inputs, width: parseInt(e.target.value) || 0 })
                   }
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 border-2 border-white/10 text-white focus:border-accent focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-200 text-white focus:border-accent focus:outline-none"
                 />
               </div>
               <div>
@@ -171,7 +171,7 @@ export default function SpecsCalculator() {
                   onChange={(e) =>
                     setInputs({ ...inputs, height: parseInt(e.target.value) || 0 })
                   }
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 border-2 border-white/10 text-white focus:border-accent focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-200 text-white focus:border-accent focus:outline-none"
                 />
               </div>
             </div>
@@ -186,22 +186,22 @@ export default function SpecsCalculator() {
                 onChange={(e) =>
                   setInputs({ ...inputs, glassThickness: parseInt(e.target.value) || 0 })
                 }
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border-2 border-white/10 text-white focus:border-accent focus:outline-none"
+                className="w-full px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-200 text-white focus:border-accent focus:outline-none"
               />
             </div>
 
             <div className="mt-8 space-y-4">
-              <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                 <div className="flex justify-between items-center">
-                  <span className="text-white/70">Area</span>
+                  <span className="text-slate-600">Area</span>
                   <span className="text-white font-semibold">
                     {calculateWeight().area} m²
                   </span>
                 </div>
               </div>
-              <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                 <div className="flex justify-between items-center">
-                  <span className="text-white/70">Weight per m²</span>
+                  <span className="text-slate-600">Weight per m²</span>
                   <span className="text-white font-semibold">
                     {calculateWeight().weightPerM2} kg/m²
                   </span>
@@ -235,7 +235,7 @@ export default function SpecsCalculator() {
                   onChange={(e) =>
                     setInputs({ ...inputs, width: parseInt(e.target.value) || 0 })
                   }
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 border-2 border-white/10 text-white focus:border-accent focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-200 text-white focus:border-accent focus:outline-none"
                 />
               </div>
               <div>
@@ -246,7 +246,7 @@ export default function SpecsCalculator() {
                   onChange={(e) =>
                     setInputs({ ...inputs, height: parseInt(e.target.value) || 0 })
                   }
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 border-2 border-white/10 text-white focus:border-accent focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-200 text-white focus:border-accent focus:outline-none"
                 />
               </div>
             </div>
@@ -254,28 +254,28 @@ export default function SpecsCalculator() {
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="p-6 rounded-xl bg-accent/10 border-2 border-accent">
                 <div className="text-center">
-                  <div className="text-sm text-white/70 mb-2">Area</div>
+                  <div className="text-sm text-slate-600 mb-2">Area</div>
                   <div className="text-3xl font-bold text-accent mb-1">
                     {calculateArea().area}
                   </div>
-                  <div className="text-sm text-white/60">m²</div>
+                  <div className="text-sm text-slate-500">m²</div>
                 </div>
               </div>
               <div className="p-6 rounded-xl bg-accent/10 border-2 border-accent">
                 <div className="text-center">
-                  <div className="text-sm text-white/70 mb-2">Perimeter</div>
+                  <div className="text-sm text-slate-600 mb-2">Perimeter</div>
                   <div className="text-3xl font-bold text-accent mb-1">
                     {calculateArea().perimeter}
                   </div>
-                  <div className="text-sm text-white/60">m</div>
+                  <div className="text-sm text-slate-500">m</div>
                 </div>
               </div>
             </div>
           </motion.div>
         )}
 
-        <div className="mt-6 p-4 rounded-xl bg-white/5">
-          <p className="text-xs text-white/50">
+        <div className="mt-6 p-4 rounded-xl bg-slate-50">
+          <p className="text-xs text-slate-400">
             * Calculations are indicative and simplified. Consult with our engineering team for
             project-specific calculations and specifications.
           </p>

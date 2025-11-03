@@ -48,14 +48,14 @@ export default function ProjectCard({ project, index = 0 }: Props) {
             </div>
           )}
           <div className="absolute bottom-4 left-4 text-white">
-            <div className="text-sm text-white/80">{project.sector}</div>
+            <div className="text-sm text-slate-700">{project.sector}</div>
           </div>
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-accent transition-colors">
             {project.title}
           </h3>
-          <div className="flex flex-wrap gap-4 text-sm text-white/70">
+          <div className="flex flex-wrap gap-4 text-sm text-slate-600">
             <div className="flex items-center gap-1">
               <svg
                 className="w-4 h-4"

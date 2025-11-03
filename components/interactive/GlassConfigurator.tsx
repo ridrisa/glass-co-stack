@@ -95,7 +95,7 @@ export default function GlassConfigurator() {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
           Glass Configurator
         </h2>
-        <p className="text-white/70 text-lg">
+        <p className="text-slate-600 text-lg">
           Configure your glass specifications and get indicative performance values
         </p>
       </motion.div>
@@ -114,7 +114,7 @@ export default function GlassConfigurator() {
                   className={`p-4 rounded-xl border-2 transition-all ${
                     config.type === type.id
                       ? 'border-accent bg-accent/10 text-white'
-                      : 'border-white/10 bg-white/5 text-white/70 hover:border-white/20'
+                      : 'border-slate-200 bg-slate-50 text-slate-600 hover:border-slate-300'
                   }`}
                 >
                   <div className="font-semibold">{type.name}</div>
@@ -135,7 +135,7 @@ export default function GlassConfigurator() {
                   className={`flex-1 py-3 rounded-xl border-2 transition-all ${
                     config.thickness === thickness
                       ? 'border-accent bg-accent/10 text-white'
-                      : 'border-white/10 bg-white/5 text-white/70 hover:border-white/20'
+                      : 'border-slate-200 bg-slate-50 text-slate-600 hover:border-slate-300'
                   }`}
                 >
                   {thickness}
@@ -155,7 +155,7 @@ export default function GlassConfigurator() {
                   className={`p-3 rounded-xl border-2 transition-all ${
                     config.coating === coating.id
                       ? 'border-accent bg-accent/10 text-white'
-                      : 'border-white/10 bg-white/5 text-white/70 hover:border-white/20'
+                      : 'border-slate-200 bg-slate-50 text-slate-600 hover:border-slate-300'
                   }`}
                 >
                   <div className="font-semibold text-sm">{coating.name}</div>
@@ -173,7 +173,7 @@ export default function GlassConfigurator() {
                 type="number"
                 value={config.width}
                 onChange={(e) => setConfig({ ...config, width: parseInt(e.target.value) || 0 })}
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border-2 border-white/10 text-white focus:border-accent focus:outline-none"
+                className="w-full px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-200 text-white focus:border-accent focus:outline-none"
                 min="300"
                 max="3000"
               />
@@ -184,7 +184,7 @@ export default function GlassConfigurator() {
                 type="number"
                 value={config.height}
                 onChange={(e) => setConfig({ ...config, height: parseInt(e.target.value) || 0 })}
-                className="w-full px-4 py-3 rounded-xl bg-white/5 border-2 border-white/10 text-white focus:border-accent focus:outline-none"
+                className="w-full px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-200 text-white focus:border-accent focus:outline-none"
                 min="300"
                 max="3000"
               />
@@ -213,42 +213,42 @@ export default function GlassConfigurator() {
                 </h3>
 
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                    <span className="text-white/70">Configuration</span>
+                  <div className="flex justify-between items-center border-b border-slate-200 pb-3">
+                    <span className="text-slate-600">Configuration</span>
                     <span className="text-white font-semibold">
                       {glassTypes.find((t) => t.id === config.type)?.name} • {config.thickness}
                     </span>
                   </div>
 
-                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                    <span className="text-white/70">Dimensions</span>
+                  <div className="flex justify-between items-center border-b border-slate-200 pb-3">
+                    <span className="text-slate-600">Dimensions</span>
                     <span className="text-white font-semibold">
                       {config.width} × {config.height} mm
                     </span>
                   </div>
 
-                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                    <span className="text-white/70">Area</span>
+                  <div className="flex justify-between items-center border-b border-slate-200 pb-3">
+                    <span className="text-slate-600">Area</span>
                     <span className="text-white font-semibold">{specs.area} m²</span>
                   </div>
 
-                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                    <span className="text-white/70">U-Value</span>
+                  <div className="flex justify-between items-center border-b border-slate-200 pb-3">
+                    <span className="text-slate-600">U-Value</span>
                     <span className="text-accent font-semibold">{specs.uValue} W/m²·K</span>
                   </div>
 
-                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                    <span className="text-white/70">SHGC</span>
+                  <div className="flex justify-between items-center border-b border-slate-200 pb-3">
+                    <span className="text-slate-600">SHGC</span>
                     <span className="text-accent font-semibold">{specs.shgc}</span>
                   </div>
 
-                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                    <span className="text-white/70">Light Transmission</span>
+                  <div className="flex justify-between items-center border-b border-slate-200 pb-3">
+                    <span className="text-slate-600">Light Transmission</span>
                     <span className="text-accent font-semibold">{specs.lt}%</span>
                   </div>
 
-                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                    <span className="text-white/70">Weight</span>
+                  <div className="flex justify-between items-center border-b border-slate-200 pb-3">
+                    <span className="text-slate-600">Weight</span>
                     <span className="text-white font-semibold">
                       {specs.weight} kg/m² ({specs.totalWeight} kg total)
                     </span>
@@ -256,7 +256,7 @@ export default function GlassConfigurator() {
                 </div>
 
                 <div className="mt-6 p-4 rounded-xl bg-accent/10 border border-accent/30">
-                  <p className="text-xs text-white/60">
+                  <p className="text-xs text-slate-500">
                     * Values are indicative and for preliminary planning only.
                     Actual performance requires lab testing and project-specific engineering calculations.
                   </p>

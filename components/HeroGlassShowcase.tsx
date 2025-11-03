@@ -111,13 +111,13 @@ export default function HeroGlassShowcase({
           {kpis.map((kpi, idx) => (
             <div
               key={kpi.label}
-              className="rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm"
+              className="rounded-xl border border-slate-200 bg-slate-50 p-4 backdrop-blur-sm"
             >
               <div className="text-3xl font-semibold text-accent">
                 {kpi.value}
                 {kpi.suffix && <span className="text-2xl">{kpi.suffix}</span>}
               </div>
-              <div className="text-sm text-white/70 mt-1">{kpi.label}</div>
+              <div className="text-sm text-slate-600 mt-1">{kpi.label}</div>
             </div>
           ))}
         </motion.div>

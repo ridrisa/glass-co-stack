@@ -106,7 +106,7 @@ export default function ProposalTemplate({
         </div>
 
         <div className="relative z-10">
-          <div className="text-sm text-white/60 mb-6">
+          <div className="text-sm text-slate-500 mb-6">
             <p>Proposal Number: {proposalNumber}</p>
             <p>Date: {date}</p>
           </div>
@@ -119,12 +119,12 @@ export default function ProposalTemplate({
           </h3>
 
           <div className="glass-light p-6 rounded-xl">
-            <p className="text-sm text-white/80 mb-2">Prepared for:</p>
+            <p className="text-sm text-slate-700 mb-2">Prepared for:</p>
             <p className="text-2xl font-bold">{clientName}</p>
           </div>
         </div>
 
-        <div className="relative z-10 text-sm text-white/60">
+        <div className="relative z-10 text-sm text-slate-500">
           <p>GLAZE//PRO | Riyadh, Saudi Arabia</p>
           <p>{contactEmail} | {contactPhone}</p>
         </div>
@@ -346,7 +346,7 @@ export default function ProposalTemplate({
         <p className="mb-2">
           GLAZE//PRO | Riyadh, Saudi Arabia | CR: 1234567890
         </p>
-        <p className="text-white/60">
+        <p className="text-slate-500">
           © {new Date().getFullYear()} GLAZE//PRO. All rights reserved. // Supporting Vision 2030
         </p>
       </footer>

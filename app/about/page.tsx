@@ -20,7 +20,7 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               {t('about.title')}
             </h1>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
               {t('about.subtitle')}
             </p>
           </motion.div>
@@ -29,12 +29,12 @@ export default function AboutPage() {
             <h2 className="text-3xl font-semibold text-white mb-6">
               {lang === 'en' ? 'Our Story' : 'قصتنا'}
             </h2>
-            <p className="text-white/90 text-lg leading-relaxed mb-6">
+            <p className="text-slate-800 text-lg leading-relaxed mb-6">
               {lang === 'en'
                 ? 'GLAZE//PRO emerged from a vision to elevate Saudi Arabia\'s architectural glass industry. Founded with expertise from Madarek-grade engineering partnerships, we specialize in precision glazing systems that combine optical clarity with thermal performance.'
                 : 'ظهرت GLAZE//PRO من رؤية لرفع صناعة الزجاج المعماري في المملكة العربية السعودية. تأسست بخبرة من شراكات هندسية على مستوى Madarek، نختص في أنظمة الزجاج الدقيقة التي تجمع بين الوضوح البصري والأداء الحراري.'}
             </p>
-            <p className="text-white/90 text-lg leading-relaxed">
+            <p className="text-slate-800 text-lg leading-relaxed">
               {lang === 'en'
                 ? 'Today, with 480+ projects delivered across Riyadh, Jeddah, and Dammam, we continue to push boundaries in curtain walls, frameless systems, smart glass, and energy-efficient façades.'
                 : 'اليوم، مع أكثر من 480 مشروع تم تسليمه عبر الرياض وجدة والدمام، نواصل دفع الحدود في جدران الستائر والأنظمة بدون إطار والزجاج الذكي والواجهات الموفرة للطاقة.'}
@@ -45,22 +45,22 @@ export default function AboutPage() {
             <motion.div {...glassFloat} transition={{ delay: 0.1 }}>
               <GlassShimmer className="p-8 text-center h-full" enable3DTilt maxTilt={8}>
                 <div className="text-4xl font-bold text-accent mb-2">480+</div>
-                <div className="text-white/80">{lang === 'en' ? 'Projects Across KSA' : 'مشروع عبر المملكة'}</div>
-                <div className="text-white/60 text-xs mt-2">{lang === 'en' ? 'Riyadh · Jeddah · NEOM · Qiddiya' : 'الرياض · جدة · نيوم · قدية'}</div>
+                <div className="text-slate-700">{lang === 'en' ? 'Projects Across KSA' : 'مشروع عبر المملكة'}</div>
+                <div className="text-slate-500 text-xs mt-2">{lang === 'en' ? 'Riyadh · Jeddah · NEOM · Qiddiya' : 'الرياض · جدة · نيوم · قدية'}</div>
               </GlassShimmer>
             </motion.div>
             <motion.div {...glassFloat} transition={{ delay: 0.2 }}>
               <GlassShimmer className="p-8 text-center h-full" enable3DTilt maxTilt={8}>
                 <div className="text-4xl font-bold text-accent mb-2">14-28</div>
-                <div className="text-white/80">{lang === 'en' ? 'Days Lead Time' : 'يوم وقت التسليم'}</div>
-                <div className="text-white/60 text-xs mt-2">{lang === 'en' ? 'Local manufacturing' : 'تصنيع محلي'}</div>
+                <div className="text-slate-700">{lang === 'en' ? 'Days Lead Time' : 'يوم وقت التسليم'}</div>
+                <div className="text-slate-500 text-xs mt-2">{lang === 'en' ? 'Local manufacturing' : 'تصنيع محلي'}</div>
               </GlassShimmer>
             </motion.div>
             <motion.div {...glassFloat} transition={{ delay: 0.3 }}>
               <GlassShimmer className="p-8 text-center h-full" enable3DTilt maxTilt={8}>
                 <div className="text-4xl font-bold text-accent mb-2">SBC</div>
-                <div className="text-white/80">{lang === 'en' ? 'Saudi Building Code' : 'الكود السعودي للبناء'}</div>
-                <div className="text-white/60 text-xs mt-2">{lang === 'en' ? 'ASTM · EN Compliant' : 'متوافق مع ASTM · EN'}</div>
+                <div className="text-slate-700">{lang === 'en' ? 'Saudi Building Code' : 'الكود السعودي للبناء'}</div>
+                <div className="text-slate-500 text-xs mt-2">{lang === 'en' ? 'ASTM · EN Compliant' : 'متوافق مع ASTM · EN'}</div>
               </GlassShimmer>
             </motion.div>
           </div>
@@ -69,7 +69,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-semibold text-white mb-6">
               {lang === 'en' ? 'Engineering Partners' : 'الشركاء الهندسيون'}
             </h2>
-            <p className="text-white/90 text-lg leading-relaxed mb-6">
+            <p className="text-slate-800 text-lg leading-relaxed mb-6">
               {lang === 'en'
                 ? 'We collaborate with Madarek Engineering Consultants and leading façade engineering firms to ensure every project meets the highest standards of precision, safety, and performance. All systems comply with SBC (Saudi Building Code), ASTM, and EN standards, ensuring seamless integration with Saudi Arabia\'s ambitious megaprojects.'
                 : 'نتعاون مع استشاريو Madarek الهندسيين وشركات هندسة الواجهات الرائدة لضمان استيفاء كل مشروع لأعلى معايير الدقة والأمان والأداء. جميع الأنظمة متوافقة مع الكود السعودي للبناء (SBC) ومعايير ASTM وEN، مما يضمن التكامل السلس مع المشاريع الضخمة الطموحة في المملكة.'}
@@ -85,7 +85,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   {lang === 'en' ? 'Precision' : 'الدقة'}
                 </h3>
-                <p className="text-white/80">
+                <p className="text-slate-700">
                   {lang === 'en'
                     ? 'Every panel engineered to exact specifications with superior tolerance control.'
                     : 'كل لوح مصمم هندسياً وفق مواصفات دقيقة مع تحكم متفوق في التفاوت.'}
@@ -95,7 +95,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   {lang === 'en' ? 'Clarity' : 'الوضوح'}
                 </h3>
-                <p className="text-white/80">
+                <p className="text-slate-700">
                   {lang === 'en'
                     ? 'Optical excellence delivering maximum daylight transmission and visual quality.'
                     : 'تميز بصري يوفر أقصى نقل لضوء النهار وجودة بصرية.'}
@@ -105,7 +105,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   {lang === 'en' ? 'Performance' : 'الأداء'}
                 </h3>
-                <p className="text-white/80">
+                <p className="text-slate-700">
                   {lang === 'en'
                     ? 'Thermal efficiency and energy savings through Low-E coatings and IGU systems.'
                     : 'كفاءة حرارية وتوفير للطاقة من خلال طلاءات Low-E وأنظمة IGU.'}
@@ -115,7 +115,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   {lang === 'en' ? 'Sustainability' : 'الاستدامة'}
                 </h3>
-                <p className="text-white/80">
+                <p className="text-slate-700">
                   {lang === 'en'
                     ? 'LEED-compliant solutions contributing to energy-efficient, daylight-optimized buildings.'
                     : 'حلول متوافقة مع LEED تساهم في المباني الموفرة للطاقة والمحسنة لضوء النهار.'}

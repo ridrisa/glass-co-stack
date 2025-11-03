@@ -52,15 +52,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.h2
             {...fadeUp}
-            className="text-3xl md:text-4xl font-bold text-white text-center mb-12"
+            className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-12"
           >
             {t('home.highlights')}
           </motion.h2>
           <div className="grid gap-6 md:grid-cols-3">
             <motion.div {...glassFloat} transition={{ delay: 0.1 }}>
               <GlassShimmer className="p-6 h-full" enable3DTilt maxTilt={10}>
-                <h3 className="text-xl font-semibold text-white mb-2">Low-E IGU (DGU)</h3>
-                <p className="text-white/80 mb-4">
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">Low-E IGU (DGU)</h3>
+                <p className="text-slate-700 mb-4">
                   {lang === 'en' 
                     ? 'U-value 1.3 W/m²K · LT 68% · SHGC 0.34'
                     : 'قيمة U 1.3 واط/م²·كلفن · انتقال الضوء 68% · SHGC 0.34'}
@@ -75,10 +75,10 @@ export default function Home() {
             </motion.div>
             <motion.div {...glassFloat} transition={{ delay: 0.2 }}>
               <GlassShimmer className="p-6 h-full" enable3DTilt maxTilt={10}>
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">
                   {lang === 'en' ? 'Tempered & Laminated' : 'مقسى ومصفح'}
                 </h3>
-                <p className="text-white/80 mb-4">
+                <p className="text-slate-700 mb-4">
                   {lang === 'en'
                     ? 'EN/ASTM compliant safety glass for façades and barriers.'
                     : 'زجاج أمان متوافق مع EN/ASTM للواجهات والحواجز.'}
@@ -93,10 +93,10 @@ export default function Home() {
             </motion.div>
             <motion.div {...glassFloat} transition={{ delay: 0.3 }}>
               <GlassShimmer className="p-6 h-full" enable3DTilt maxTilt={10}>
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">
                   {lang === 'en' ? 'Point-Fixed / Spider Systems' : 'أنظمة النقطة الثابتة / العنكبوتية'}
                 </h3>
-                <p className="text-white/80 mb-4">
+                <p className="text-slate-700 mb-4">
                   {lang === 'en' 
                     ? 'Minimal hardware, maximum transparency.'
                     : 'حد أدنى من المعدات، أقصى شفافية.'}
@@ -116,7 +116,7 @@ export default function Home() {
       {/* Featured Systems with Refraction */}
       <section>
         <div className="max-w-7xl mx-auto">
-          <motion.h2 {...fadeUp} className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+          <motion.h2 {...fadeUp} className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-12">
             {t('home.featured')}
           </motion.h2>
           <div className="grid gap-6 md:grid-cols-3">
@@ -163,7 +163,7 @@ export default function Home() {
       <section className="relative">
         <CausticsBackground className="absolute inset-0 opacity-20" />
         <div className="max-w-7xl mx-auto relative z-10">
-          <motion.h2 {...fadeUp} className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+          <motion.h2 {...fadeUp} className="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-12">
             {t('home.material')}
           </motion.h2>
           <div className="flex flex-col md:flex-row items-center gap-12">
@@ -175,13 +175,13 @@ export default function Home() {
                 height={400}
               />
             </div>
-            <motion.div {...fadeUp} className="flex-1 text-white/80 max-w-2xl">
+            <motion.div {...fadeUp} className="flex-1 text-slate-700 max-w-2xl">
               <p className="text-lg mb-4">
                 {lang === 'en' 
                   ? 'Our glazing blends optical clarity with thermal performance. Subtle reflection, controlled refraction, and precise edges deliver a premium architectural finish.'
                   : 'يجمع زجاجنا بين الوضوح البصري والأداء الحراري. الانعكاس الدقيق، الانكسار المتحكم به، والحواف الدقيقة توفر تشطيبات معمارية مميزة.'}
               </p>
-              <p className="text-base text-white/70">
+              <p className="text-base text-slate-600">
                 {lang === 'en'
                   ? 'Every panel is engineered for Saudi Arabia\'s desert climate, balancing daylight transmission with energy efficiency. Optimized for high solar gain control and thermal performance across Riyadh, Jeddah, Dammam, and beyond.'
                   : 'كل لوح مصمم هندسياً لمناخ المملكة الصحراوي، موازناً بين نقل ضوء النهار وكفاءة الطاقة. محسّن للتحكم العالي في اكتساب الطاقة الشمسية والأداء الحراري عبر الرياض وجدة والدمام وأبعد من ذلك.'}
@@ -201,10 +201,10 @@ export default function Home() {
       <section className="relative">
         <CausticsBackground className="absolute inset-0 opacity-15" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <motion.h2 {...fadeUp} className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <motion.h2 {...fadeUp} className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
             {t('home.cta.title')}
           </motion.h2>
-          <motion.p {...fadeUp} transition={{ delay: 0.1 }} className="text-xl text-white/80 mb-8">
+          <motion.p {...fadeUp} transition={{ delay: 0.1 }} className="text-xl text-slate-700 mb-8">
             {lang === 'en'
               ? 'Transform your vision into architectural reality with premium glazing systems. Contributing to Vision 2030\'s transformation of Saudi Arabia into a world-class destination.'
               : 'حول رؤيتك إلى واقع معماري مع أنظمة الزجاج المميزة. تساهم في تحويل رؤية 2030 للمملكة إلى وجهة عالمية المستوى.'}

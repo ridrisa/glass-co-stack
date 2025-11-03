@@ -35,7 +35,7 @@ export default function GlassShimmer({
     el.style.setProperty('--shine-opacity', String(Math.min(Math.max(intensity, 0), 1)))
   }, [intensity])
 
-  const baseClassName = `relative overflow-hidden backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl ${className}`
+  const baseClassName = `relative overflow-hidden backdrop-blur-md bg-slate-50 border border-slate-200 rounded-2xl ${className}`
 
   if (!enable3DTilt) {
     return (

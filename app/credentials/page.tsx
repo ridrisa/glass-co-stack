@@ -46,7 +46,7 @@ export default function CredentialsPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Credentials & Compliance
             </h1>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
               Committed to excellence through rigorous standards and continuous improvement
             </p>
           </div>
@@ -72,25 +72,25 @@ export default function CredentialsPage() {
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   General Liability
                 </h3>
-                <p className="text-white/80">$50M aggregate coverage</p>
+                <p className="text-slate-700">$50M aggregate coverage</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   Workers Compensation
                 </h3>
-                <p className="text-white/80">Full coverage for all employees</p>
+                <p className="text-slate-700">Full coverage for all employees</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   Performance Bonds
                 </h3>
-                <p className="text-white/80">Up to $200M single project capacity</p>
+                <p className="text-slate-700">Up to $200M single project capacity</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-accent mb-2">
                   Professional Liability
                 </h3>
-                <p className="text-white/80">$25M E&O coverage</p>
+                <p className="text-slate-700">$25M E&O coverage</p>
               </div>
             </div>
           </div>

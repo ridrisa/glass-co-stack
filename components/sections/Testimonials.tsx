@@ -63,7 +63,7 @@ export default function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t('testimonials.title')}
           </h2>
-          <p className="text-white/70 text-lg">
+          <p className="text-slate-600 text-lg">
             {t('testimonials.subtitle')}
           </p>
         </motion.div>
@@ -93,7 +93,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote */}
-                <blockquote className="text-xl md:text-2xl text-white/90 font-medium text-center mb-8 leading-relaxed">
+                <blockquote className="text-xl md:text-2xl text-slate-800 font-medium text-center mb-8 leading-relaxed">
                   "{testimonials[activeIndex].quote}"
                 </blockquote>
 
@@ -105,7 +105,7 @@ export default function Testimonials() {
                   <p className="text-accent text-sm font-medium">
                     {testimonials[activeIndex].role}
                   </p>
-                  <p className="text-white/60 text-sm mt-1">
+                  <p className="text-slate-500 text-sm mt-1">
                     {testimonials[activeIndex].company}
                   </p>
                 </div>
@@ -117,7 +117,7 @@ export default function Testimonials() {
           <div className="flex items-center justify-center gap-4 mt-8">
             <button
               onClick={prevTestimonial}
-              className="p-3 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent"
+              className="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent"
               aria-label="Previous testimonial"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,7 +132,7 @@ export default function Testimonials() {
                   key={idx}
                   onClick={() => setActiveIndex(idx)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 focus:outline-none ${
-                    idx === activeIndex ? 'bg-accent w-8' : 'bg-white/30 hover:bg-white/50'
+                    idx === activeIndex ? 'bg-accent w-8' : 'bg-white/30 hover:bg-slate-500'
                   }`}
                   aria-label={`Go to testimonial ${idx + 1}`}
                 />
@@ -141,7 +141,7 @@ export default function Testimonials() {
 
             <button
               onClick={nextTestimonial}
-              className="p-3 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent"
+              className="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent"
               aria-label="Next testimonial"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

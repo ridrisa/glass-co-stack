@@ -59,9 +59,9 @@ export default function SpecTable({ specs, title = 'Performance Specifications' 
           aria-label="Glass performance specifications table"
         >
           <thead>
-            <tr className="border-b border-white/20">
+            <tr className="border-b border-slate-300">
               <th
-                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-white/5 transition-colors"
+                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-slate-50 transition-colors"
                 onClick={() => handleSort('name')}
                 scope="col"
                 aria-sort={getAriaSort('name')}
@@ -72,7 +72,7 @@ export default function SpecTable({ specs, title = 'Performance Specifications' 
                 )}
               </th>
               <th
-                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-white/5 transition-colors"
+                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-slate-50 transition-colors"
                 onClick={() => handleSort('thickness')}
                 scope="col"
                 aria-sort={getAriaSort('thickness')}
@@ -83,7 +83,7 @@ export default function SpecTable({ specs, title = 'Performance Specifications' 
                 )}
               </th>
               <th
-                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-white/5 transition-colors"
+                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-slate-50 transition-colors"
                 onClick={() => handleSort('uvValue')}
                 scope="col"
                 aria-sort={getAriaSort('uvValue')}
@@ -94,7 +94,7 @@ export default function SpecTable({ specs, title = 'Performance Specifications' 
                 )}
               </th>
               <th
-                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-white/5 transition-colors"
+                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-slate-50 transition-colors"
                 onClick={() => handleSort('shgc')}
                 scope="col"
                 aria-sort={getAriaSort('shgc')}
@@ -105,7 +105,7 @@ export default function SpecTable({ specs, title = 'Performance Specifications' 
                 )}
               </th>
               <th
-                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-white/5 transition-colors"
+                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-slate-50 transition-colors"
                 onClick={() => handleSort('lt')}
                 scope="col"
                 aria-sort={getAriaSort('lt')}
@@ -116,7 +116,7 @@ export default function SpecTable({ specs, title = 'Performance Specifications' 
                 )}
               </th>
               <th
-                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-white/5 transition-colors"
+                className="px-4 py-3 text-white font-semibold cursor-pointer hover:bg-slate-50 transition-colors"
                 onClick={() => handleSort('stc')}
                 scope="col"
                 aria-sort={getAriaSort('stc')}
@@ -135,14 +135,14 @@ export default function SpecTable({ specs, title = 'Performance Specifications' 
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: idx * 0.03 }}
-                className="border-b border-white/10 hover:bg-white/5 transition-colors"
+                className="border-b border-slate-200 hover:bg-slate-50 transition-colors"
               >
                 <td className="px-4 py-3 text-white font-medium">{spec.name}</td>
-                <td className="px-4 py-3 text-white/80">{spec.thickness}</td>
+                <td className="px-4 py-3 text-slate-700">{spec.thickness}</td>
                 <td className="px-4 py-3 text-accent font-semibold">{spec.uvValue.toFixed(2)}</td>
-                <td className="px-4 py-3 text-white/80">{spec.shgc.toFixed(2)}</td>
-                <td className="px-4 py-3 text-white/80">{(spec.lt * 100).toFixed(1)}%</td>
-                <td className="px-4 py-3 text-white/80">
+                <td className="px-4 py-3 text-slate-700">{spec.shgc.toFixed(2)}</td>
+                <td className="px-4 py-3 text-slate-700">{(spec.lt * 100).toFixed(1)}%</td>
+                <td className="px-4 py-3 text-slate-700">
                   {spec.stc && spec.rw ? `${spec.stc} / ${spec.rw} dB` : '-'}
                 </td>
               </motion.tr>
@@ -150,7 +150,7 @@ export default function SpecTable({ specs, title = 'Performance Specifications' 
           </tbody>
         </table>
       </div>
-      <div className="mt-6 text-sm text-white/60">
+      <div className="mt-6 text-sm text-slate-500">
         <p>
           <strong>U-Value:</strong> Lower is better. Measures thermal transmittance (heat loss).
         </p>

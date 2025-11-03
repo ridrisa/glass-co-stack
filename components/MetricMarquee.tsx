@@ -89,7 +89,7 @@ export default function MetricMarquee({ metrics, className = '' }: Props) {
                   prefix={metric.prefix}
                 />
               </div>
-              <div className="text-white/70 text-sm md:text-base">{metric.label}</div>
+              <div className="text-slate-600 text-sm md:text-base">{metric.label}</div>
             </motion.div>
           ))}
         </div>

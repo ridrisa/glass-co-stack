@@ -62,7 +62,7 @@ export default function Lightbox({
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-10 p-2 text-white hover:text-glass-accent transition-colors rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20"
+            className="absolute top-4 right-4 z-10 p-2 text-white hover:text-glass-accent transition-colors rounded-full bg-slate-100 backdrop-blur-sm hover:bg-slate-200"
             aria-label="Close lightbox"
           >
             <svg
@@ -85,7 +85,7 @@ export default function Lightbox({
                 e.stopPropagation()
                 onPrev()
               }}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 text-white hover:text-glass-accent transition-colors rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 text-white hover:text-glass-accent transition-colors rounded-full bg-slate-100 backdrop-blur-sm hover:bg-slate-200"
               aria-label="Previous image"
             >
               <svg
@@ -109,7 +109,7 @@ export default function Lightbox({
                 e.stopPropagation()
                 onNext()
               }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 text-white hover:text-glass-accent transition-colors rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 text-white hover:text-glass-accent transition-colors rounded-full bg-slate-100 backdrop-blur-sm hover:bg-slate-200"
               aria-label="Next image"
             >
               <svg

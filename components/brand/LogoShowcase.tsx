@@ -57,15 +57,15 @@ export default function LogoShowcase() {
         {/* Logo Specifications */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
           <div className="glass p-4 rounded-xl text-sm">
-            <p className="text-white/50 mb-1">Wordmark</p>
+            <p className="text-slate-400 mb-1">Wordmark</p>
             <p className="text-white font-semibold">GLAZE<span className="text-accent">//</span>PRO</p>
           </div>
           <div className="glass p-4 rounded-xl text-sm">
-            <p className="text-white/50 mb-1">Signature Element</p>
+            <p className="text-slate-400 mb-1">Signature Element</p>
             <p className="text-accent font-bold text-2xl">//</p>
           </div>
           <div className="glass p-4 rounded-xl text-sm">
-            <p className="text-white/50 mb-1">Typography</p>
+            <p className="text-slate-400 mb-1">Typography</p>
             <p className="text-white font-semibold">Inter Bold</p>
           </div>
         </div>
@@ -81,9 +81,9 @@ export default function LogoShowcase() {
           {/* On Dark Background */}
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="bg-ink border-2 border-white/10 p-12 rounded-2xl"
+            className="bg-ink border-2 border-slate-200 p-12 rounded-2xl"
           >
-            <p className="text-xs text-white/50 mb-6">On Dark Background (Primary)</p>
+            <p className="text-xs text-slate-400 mb-6">On Dark Background (Primary)</p>
             <h2 className="text-5xl font-bold text-white text-center">
               GLAZE<span className="text-accent relative">
                 //
@@ -111,16 +111,16 @@ export default function LogoShowcase() {
           {/* Monochrome White */}
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="bg-gradient-to-br from-ink to-paper border-2 border-white/10 p-12 rounded-2xl"
+            className="bg-gradient-to-br from-ink to-paper border-2 border-slate-200 p-12 rounded-2xl"
           >
-            <p className="text-xs text-white/50 mb-6">Monochrome (White)</p>
+            <p className="text-xs text-slate-400 mb-6">Monochrome (White)</p>
             <h2 className="text-5xl font-bold text-white text-center">
               GLAZE<span className="relative">
                 //
                 <span className="absolute inset-0 blur-sm opacity-50">//</span>
               </span>PRO
             </h2>
-            <p className="text-white/70 text-center mt-3 italic">Precision in Transparency</p>
+            <p className="text-slate-600 text-center mt-3 italic">Precision in Transparency</p>
           </motion.div>
 
           {/* Monochrome Black */}
@@ -147,30 +147,30 @@ export default function LogoShowcase() {
           Logo Sizes
         </h3>
         <div className="glass p-12 rounded-2xl space-y-8">
-          <div className="border-b border-white/10 pb-6">
-            <p className="text-xs text-white/50 mb-4">Large (Hero / Homepage)</p>
+          <div className="border-b border-slate-200 pb-6">
+            <p className="text-xs text-slate-400 mb-4">Large (Hero / Homepage)</p>
             <h1 className="text-8xl font-bold text-white">
               GLAZE<span className="text-accent">//</span>PRO
             </h1>
           </div>
-          <div className="border-b border-white/10 pb-6">
-            <p className="text-xs text-white/50 mb-4">Medium (Headers / Footers)</p>
+          <div className="border-b border-slate-200 pb-6">
+            <p className="text-xs text-slate-400 mb-4">Medium (Headers / Footers)</p>
             <h2 className="text-5xl font-bold text-white">
               GLAZE<span className="text-accent">//</span>PRO
             </h2>
           </div>
-          <div className="border-b border-white/10 pb-6">
-            <p className="text-xs text-white/50 mb-4">Small (Navigation)</p>
+          <div className="border-b border-slate-200 pb-6">
+            <p className="text-xs text-slate-400 mb-4">Small (Navigation)</p>
             <h3 className="text-3xl font-bold text-white">
               GLAZE<span className="text-accent">//</span>PRO
             </h3>
           </div>
           <div>
-            <p className="text-xs text-white/50 mb-4">Minimum Size (Favicon / Icon)</p>
+            <p className="text-xs text-slate-400 mb-4">Minimum Size (Favicon / Icon)</p>
             <h4 className="text-xl font-bold text-white">
               GLAZE<span className="text-accent">//</span>PRO
             </h4>
-            <p className="text-xs text-white/50 mt-2">Minimum width: 120px (readable)</p>
+            <p className="text-xs text-slate-400 mt-2">Minimum width: 120px (readable)</p>
           </div>
         </div>
       </section>
@@ -216,7 +216,7 @@ export default function LogoShowcase() {
               GLAZE<span className="text-accent">//</span>PRO
             </h2>
           </div>
-          <p className="text-sm text-white/70 mt-4 text-center">
+          <p className="text-sm text-slate-600 mt-4 text-center">
             Maintain minimum clear space of <strong className="text-accent">1× letter height</strong> around logo on all sides
           </p>
         </div>
@@ -237,7 +237,7 @@ export default function LogoShowcase() {
               </svg>
               Do's
             </h4>
-            <ul className="space-y-2 text-sm text-white/80">
+            <ul className="space-y-2 text-sm text-slate-700">
               <li>✓ Use approved color variations</li>
               <li>✓ Maintain aspect ratio when scaling</li>
               <li>✓ Ensure sufficient contrast with background</li>
@@ -254,7 +254,7 @@ export default function LogoShowcase() {
               </svg>
               Don'ts
             </h4>
-            <ul className="space-y-2 text-sm text-white/80">
+            <ul className="space-y-2 text-sm text-slate-700">
               <li>✗ Alter logo proportions or distort</li>
               <li>✗ Change colors or add effects</li>
               <li>✗ Place on busy backgrounds</li>
@@ -272,7 +272,7 @@ export default function LogoShowcase() {
           Download Logo Assets
         </h3>
         <div className="glass p-8 rounded-2xl">
-          <p className="text-white/70 mb-6">
+          <p className="text-slate-600 mb-6">
             Download logo files in various formats for print and digital use:
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -289,7 +289,7 @@ export default function LogoShowcase() {
               EPS (Vector)
             </button>
           </div>
-          <p className="text-xs text-white/50 mt-4 text-center">
+          <p className="text-xs text-slate-400 mt-4 text-center">
             Note: Logo asset downloads are placeholder buttons for demonstration
           </p>
         </div>

@@ -28,7 +28,7 @@ export default function AnimationPreview() {
           {/* Fade Up */}
           <div className="glass p-8 rounded-2xl">
             <h4 className="text-lg font-bold text-white mb-4">fadeUp</h4>
-            <p className="text-sm text-white/70 mb-6">
+            <p className="text-sm text-slate-600 mb-6">
               Entrance animation for page content
             </p>
             <button
@@ -47,7 +47,7 @@ export default function AnimationPreview() {
                 <p className="text-white">Content appears smoothly from below</p>
               </motion.div>
             )}
-            <pre className="text-xs text-white/50 font-mono mt-4 p-4 bg-ink/50 rounded overflow-x-auto">
+            <pre className="text-xs text-slate-400 font-mono mt-4 p-4 bg-ink/50 rounded overflow-x-auto">
 {`initial: { opacity: 0, y: 30 }
 animate: { opacity: 1, y: 0 }
 transition: {
@@ -60,7 +60,7 @@ transition: {
           {/* Glass Float */}
           <div className="glass p-8 rounded-2xl">
             <h4 className="text-lg font-bold text-white mb-4">glassFloat</h4>
-            <p className="text-sm text-white/70 mb-6">
+            <p className="text-sm text-slate-600 mb-6">
               Card entrance with scale and fade
             </p>
             <button
@@ -79,7 +79,7 @@ transition: {
                 <p className="text-white">Glass cards float into view</p>
               </motion.div>
             )}
-            <pre className="text-xs text-white/50 font-mono mt-4 p-4 bg-ink/50 rounded overflow-x-auto">
+            <pre className="text-xs text-slate-400 font-mono mt-4 p-4 bg-ink/50 rounded overflow-x-auto">
 {`initial: { opacity: 0, scale: 0.95, y: 20 }
 animate: { opacity: 1, scale: 1, y: 0 }
 transition: {
@@ -92,7 +92,7 @@ transition: {
           {/* Hover Lift */}
           <div className="glass p-8 rounded-2xl">
             <h4 className="text-lg font-bold text-white mb-4">hoverLift</h4>
-            <p className="text-sm text-white/70 mb-6">
+            <p className="text-sm text-slate-600 mb-6">
               Interactive hover state
             </p>
             <motion.div
@@ -102,7 +102,7 @@ transition: {
             >
               <p className="text-white text-center">Hover over me</p>
             </motion.div>
-            <pre className="text-xs text-white/50 font-mono mt-4 p-4 bg-ink/50 rounded overflow-x-auto">
+            <pre className="text-xs text-slate-400 font-mono mt-4 p-4 bg-ink/50 rounded overflow-x-auto">
 {`whileHover={{
   scale: 1.02,
   y: -4
@@ -117,7 +117,7 @@ transition={{
           {/* Stagger Children */}
           <div className="glass p-8 rounded-2xl">
             <h4 className="text-lg font-bold text-white mb-4">staggerChildren</h4>
-            <p className="text-sm text-white/70 mb-6">
+            <p className="text-sm text-slate-600 mb-6">
               Sequential list animations
             </p>
             <button
@@ -149,7 +149,7 @@ transition={{
                 ))}
               </motion.div>
             )}
-            <pre className="text-xs text-white/50 font-mono mt-4 p-4 bg-ink/50 rounded overflow-x-auto">
+            <pre className="text-xs text-slate-400 font-mono mt-4 p-4 bg-ink/50 rounded overflow-x-auto">
 {`variants={{
   animate: {
     transition: {
@@ -177,7 +177,7 @@ transition={{
                 <span className="text-3xl">🪟</span>
               </div>
             </div>
-            <pre className="text-xs text-white/50 font-mono p-4 bg-ink/50 rounded overflow-x-auto">
+            <pre className="text-xs text-slate-400 font-mono p-4 bg-ink/50 rounded overflow-x-auto">
 {`@keyframes float {
   0%, 100% {
     transform: translateY(0)
@@ -198,7 +198,7 @@ transition={{
                 <span className="text-accent text-2xl font-bold">//</span>
               </div>
             </div>
-            <pre className="text-xs text-white/50 font-mono p-4 bg-ink/50 rounded overflow-x-auto">
+            <pre className="text-xs text-slate-400 font-mono p-4 bg-ink/50 rounded overflow-x-auto">
 {`@keyframes glow {
   0% {
     box-shadow: 0 0 5px accent
@@ -215,11 +215,11 @@ transition={{
           <div className="glass p-8 rounded-2xl">
             <h4 className="text-lg font-bold text-white mb-4">glass-shimmer</h4>
             <div className="flex justify-center mb-6">
-              <div className="glass-shimmer w-full h-24 bg-white/5 rounded-xl flex items-center justify-center">
+              <div className="glass-shimmer w-full h-24 bg-slate-50 rounded-xl flex items-center justify-center">
                 <span className="text-white font-semibold">Shimmer Effect</span>
               </div>
             </div>
-            <pre className="text-xs text-white/50 font-mono p-4 bg-ink/50 rounded overflow-x-auto">
+            <pre className="text-xs text-slate-400 font-mono p-4 bg-ink/50 rounded overflow-x-auto">
 {`@keyframes glass-shine {
   0% {
     transform: translateX(-100%)
@@ -247,7 +247,7 @@ transition={{
             <div>
               <h4 className="text-lg font-bold text-white mb-3">Brand Easing</h4>
               <p className="text-spec mb-4">[0.22, 1, 0.36, 1]</p>
-              <p className="text-sm text-white/70 mb-4">
+              <p className="text-sm text-slate-600 mb-4">
                 Smooth, spring-like motion for all entrance animations
               </p>
               <motion.div
@@ -268,7 +268,7 @@ transition={{
             <div>
               <h4 className="text-lg font-bold text-white mb-3">Hover Easing</h4>
               <p className="text-spec mb-4">ease-out</p>
-              <p className="text-sm text-white/70 mb-4">
+              <p className="text-sm text-slate-600 mb-4">
                 Quick, responsive for interactive states
               </p>
               <motion.div
@@ -296,10 +296,10 @@ transition={{
           Accessibility: Reduced Motion
         </h3>
         <div className="glass p-8 rounded-2xl">
-          <p className="text-white/70 mb-6">
+          <p className="text-slate-600 mb-6">
             All animations respect the user's <code className="text-spec">prefers-reduced-motion</code> setting:
           </p>
-          <pre className="text-sm text-white/70 font-mono p-6 bg-ink/50 rounded-xl overflow-x-auto">
+          <pre className="text-sm text-slate-600 font-mono p-6 bg-ink/50 rounded-xl overflow-x-auto">
 {`@media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -310,7 +310,7 @@ transition={{
           </pre>
           <div className="mt-6 glass-light p-6 rounded-xl">
             <h4 className="text-lg font-bold text-white mb-2">Best Practices</h4>
-            <ul className="space-y-2 text-sm text-white/70">
+            <ul className="space-y-2 text-sm text-slate-600">
               <li>✓ Essential motion only (no decorative animations)</li>
               <li>✓ Subtle over dramatic</li>
               <li>✓ Purposeful, not distracting</li>
@@ -333,28 +333,28 @@ transition={{
               <div className="text-2xl font-bold text-accent font-mono w-24">0.3s</div>
               <div className="flex-1">
                 <p className="text-white font-semibold">Micro-interactions</p>
-                <p className="text-sm text-white/60">Hover states, button presses</p>
+                <p className="text-sm text-slate-500">Hover states, button presses</p>
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 bg-ink/30 rounded-lg">
               <div className="text-2xl font-bold text-accent font-mono w-24">0.6s</div>
               <div className="flex-1">
                 <p className="text-white font-semibold">Content Entrance</p>
-                <p className="text-sm text-white/60">Page loads, section reveals</p>
+                <p className="text-sm text-slate-500">Page loads, section reveals</p>
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 bg-ink/30 rounded-lg">
               <div className="text-2xl font-bold text-accent font-mono w-24">0.8s</div>
               <div className="flex-1">
                 <p className="text-white font-semibold">Complex Animations</p>
-                <p className="text-sm text-white/60">Multi-property transitions</p>
+                <p className="text-sm text-slate-500">Multi-property transitions</p>
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 bg-ink/30 rounded-lg">
               <div className="text-2xl font-bold text-accent font-mono w-24">5.5s+</div>
               <div className="flex-1">
                 <p className="text-white font-semibold">Ambient Effects</p>
-                <p className="text-sm text-white/60">Glass shimmer, floating elements</p>
+                <p className="text-sm text-slate-500">Glass shimmer, floating elements</p>
               </div>
             </div>
           </div>

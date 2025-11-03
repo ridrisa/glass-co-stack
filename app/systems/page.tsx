@@ -72,10 +72,10 @@ export default function SystemsPage() {
           <motion.h1 {...fadeUp} className="text-3xl md:text-5xl font-bold text-white mb-4">
             {t('systems.title')}
           </motion.h1>
-          <motion.p {...fadeUp} className="text-white/80 mt-2 max-w-3xl text-lg mb-8">
+          <motion.p {...fadeUp} className="text-slate-700 mt-2 max-w-3xl text-lg mb-8">
             {t('systems.subtitle')}
           </motion.p>
-          <motion.p {...fadeUp} className="text-white/70 max-w-3xl mb-8">
+          <motion.p {...fadeUp} className="text-slate-600 max-w-3xl mb-8">
             {lang === 'en'
               ? 'Each system is engineered for clarity, safety, and long-term performance in Saudi Arabia\'s demanding climate. All systems comply with SBC (Saudi Building Code), ASTM, and EN standards — trusted by leading Vision 2030 megaprojects including NEOM, Qiddiya, and The Red Sea.'
               : 'كل نظام مصمم هندسياً للوضوح والأمان والأداء طويل الأمد في مناخ المملكة المتطلب. جميع الأنظمة متوافقة مع الكود السعودي للبناء (SBC) ومعايير ASTM وEN — موثوق بها من قبل مشاريع رؤية 2030 الرائدة بما في ذلك نيوم وقدية والبحر الأحمر.'}

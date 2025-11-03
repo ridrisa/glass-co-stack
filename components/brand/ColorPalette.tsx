@@ -66,9 +66,9 @@ export default function ColorPalette({ title = 'Color Palette', colors }: ColorP
               <h4 className="text-lg font-bold text-white mb-1">{color.name}</h4>
               <p className="text-spec mb-2">{color.value}</p>
               {color.cssVar && (
-                <p className="text-xs text-white/50 font-mono mb-2">{color.cssVar}</p>
+                <p className="text-xs text-slate-400 font-mono mb-2">{color.cssVar}</p>
               )}
-              <p className="text-sm text-white/70">{color.usage}</p>
+              <p className="text-sm text-slate-600">{color.usage}</p>
             </div>
 
             {/* Hover Indicator */}

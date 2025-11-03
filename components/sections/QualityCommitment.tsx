@@ -68,7 +68,7 @@ export default function QualityCommitment() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t('quality.title')}
           </h2>
-          <p className="text-white/70 text-lg max-w-3xl mx-auto">
+          <p className="text-slate-600 text-lg max-w-3xl mx-auto">
             {t('quality.subtitle')}
           </p>
         </motion.div>
@@ -88,7 +88,7 @@ export default function QualityCommitment() {
                 <h3 className="text-lg font-semibold text-white mb-2">
                   {standard.title}
                 </h3>
-                <p className="text-sm text-white/60">
+                <p className="text-sm text-slate-500">
                   {standard.description}
                 </p>
               </GlassShimmer>
@@ -112,7 +112,7 @@ export default function QualityCommitment() {
                 </h3>
                 <ul className="space-y-2">
                   {commitment.points.map((point) => (
-                    <li key={point} className="flex items-start gap-2 text-white/70">
+                    <li key={point} className="flex items-start gap-2 text-slate-600">
                       <span className="text-accent mt-1">✓</span>
                       <span>{point}</span>
                     </li>
@@ -130,7 +130,7 @@ export default function QualityCommitment() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <p className="text-sm text-white/50 max-w-3xl mx-auto">
+          <p className="text-sm text-slate-400 max-w-3xl mx-auto">
             * {t('quality.disclaimer')}
           </p>
         </motion.div>
