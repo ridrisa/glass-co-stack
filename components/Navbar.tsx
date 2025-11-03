@@ -151,23 +151,28 @@ export default function Navbar() {
                 <AnimatePresence>
                   {item.hasMenu && item.menuType === 'products' && productsMenuOpen && (
                     <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
+                      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 mt-2 w-72 glass-dark rounded-xl border border-slate-200 shadow-xl overflow-hidden"
+                      className="absolute top-full left-0 mt-3 w-80 glass-5 rounded-xl border border-white/10 shadow-glass-xl overflow-hidden"
                     >
-                      <div className="p-3">
+                      <div className="h-1 bg-gradient-to-r from-accent via-accent/50 to-transparent" />
+                      <div className="p-4">
                         {productItems.map((product) => (
                           <Link
                             key={product.name}
                             href={product.href}
-                            className="block px-4 py-3 rounded-lg hover:bg-slate-100 transition-colors group"
+                            className="group block px-4 py-3 rounded-lg hover:bg-accent/10 transition-all duration-200 relative overflow-hidden"
                           >
-                            <div className="font-medium text-white group-hover:text-accent transition-colors">
-                              {product.name}
+                            <div className="absolute inset-0 rounded-lg border border-transparent group-hover:border-accent/30 transition-colors duration-200" />
+                            <div className="relative z-10">
+                              <div className="font-semibold text-white group-hover:text-accent transition-colors duration-200 flex items-center gap-2">
+                                {product.name}
+                                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-accent">→</span>
+                              </div>
+                              <div className="text-body-sm text-slate-400 mt-1">{product.desc}</div>
                             </div>
-                            <div className="text-xs text-slate-500 mt-0.5">{product.desc}</div>
                           </Link>
                         ))}
                       </div>
@@ -176,23 +181,28 @@ export default function Navbar() {
 
                   {item.hasMenu && item.menuType === 'systems' && systemsMenuOpen && (
                     <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
+                      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 mt-2 w-72 glass-dark rounded-xl border border-slate-200 shadow-xl overflow-hidden"
+                      className="absolute top-full left-0 mt-3 w-80 glass-5 rounded-xl border border-white/10 shadow-glass-xl overflow-hidden"
                     >
-                      <div className="p-3">
+                      <div className="h-1 bg-gradient-to-r from-accent via-accent/50 to-transparent" />
+                      <div className="p-4">
                         {systemItems.map((system) => (
                           <Link
                             key={system.name}
                             href={system.href}
-                            className="block px-4 py-3 rounded-lg hover:bg-slate-100 transition-colors group"
+                            className="group block px-4 py-3 rounded-lg hover:bg-accent/10 transition-all duration-200 relative overflow-hidden"
                           >
-                            <div className="font-medium text-white group-hover:text-accent transition-colors">
-                              {system.name}
+                            <div className="absolute inset-0 rounded-lg border border-transparent group-hover:border-accent/30 transition-colors duration-200" />
+                            <div className="relative z-10">
+                              <div className="font-semibold text-white group-hover:text-accent transition-colors duration-200 flex items-center gap-2">
+                                {system.name}
+                                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-accent">→</span>
+                              </div>
+                              <div className="text-body-sm text-slate-400 mt-1">{system.desc}</div>
                             </div>
-                            <div className="text-xs text-slate-500 mt-0.5">{system.desc}</div>
                           </Link>
                         ))}
                       </div>

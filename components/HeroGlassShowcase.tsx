@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Link from 'next/link'
+import PremiumButton from './ui/PremiumButton'
 import CausticsBackground from './CausticsBackground'
 
 type KPI = {
@@ -82,24 +82,16 @@ export default function HeroGlassShowcase({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-8"
         >
-          {ctaHref ? (
-            <Link
-              href={ctaHref}
-              className="inline-block mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-white shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
-              aria-label={ctaText}
-            >
-              {ctaText}
-            </Link>
-          ) : (
-            <button
-              onClick={handleCta}
-              className="mt-8 rounded-xl bg-accent px-6 py-3 font-medium text-white shadow-card hover:scale-[1.02] transition-transform focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-ink"
-              aria-label={ctaText}
-            >
-              {ctaText}
-            </button>
-          )}
+          <PremiumButton
+            href={ctaHref}
+            onClick={onCta}
+            size="lg"
+            ariaLabel={ctaText}
+          >
+            {ctaText}
+          </PremiumButton>
         </motion.div>
 
         <motion.div

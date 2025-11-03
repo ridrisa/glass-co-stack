@@ -143,3 +143,51 @@ html {
     scroll-behavior: auto !important;
   }
 }
+
+/* Premium Card Hover Effects */
+.card-hover {
+  @apply transition-all duration-300;
+}
+
+.card-hover:hover {
+  @apply scale-[1.02] shadow-glass-lg;
+}
+
+/* Card with gradient overlay on hover */
+.card-gradient-hover {
+  @apply relative overflow-hidden;
+}
+
+.card-gradient-hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card-gradient-hover:hover::before {
+  opacity: 1;
+}
+
+/* Card with border glow on hover */
+.card-glow-hover {
+  @apply relative;
+}
+
+.card-glow-hover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(37, 99, 235, 0);
+  transition: border-color 0.3s ease;
+  pointer-events: none;
+}
+
+.card-glow-hover:hover::after {
+  border-color: rgba(37, 99, 235, 0.5);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.2);
+}
