@@ -9,6 +9,8 @@ import { useLanguage } from '@/lib/language'
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [productsMenuOpen, setProductsMenuOpen] = useState(false)
+  const [systemsMenuOpen, setSystemsMenuOpen] = useState(false)
   const pathname = usePathname()
   const { lang, setLang, t, dir } = useLanguage()
 
@@ -20,26 +22,52 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const productItems = [
+    { name: 'Tempered Glass', href: '/products#tempered', desc: 'Safety & impact resistance' },
+    { name: 'Laminated Glass', href: '/products#laminated', desc: 'Security & sound control' },
+    { name: 'IGU/DGU', href: '/products#igu', desc: 'Thermal insulation' },
+    { name: 'Low-E Glass', href: '/products#low-e', desc: 'Energy efficiency' },
+  ]
+
+  const systemItems = [
+    { name: 'Curtain Walls', href: '/systems#curtain-wall', desc: 'Modern façade systems' },
+    { name: 'Spider Systems', href: '/systems#spider', desc: 'Point-fixed glazing' },
+    { name: 'Frameless Partitions', href: '/systems#frameless', desc: 'Interior glass walls' },
+    { name: 'Skylights', href: '/systems#skylight', desc: 'Natural daylighting' },
+  ]
+
   const navItems = [
     {
       label: t('nav.products'),
       href: '/products',
+      hasMenu: true,
+      menuType: 'products' as const,
     },
     {
       label: t('nav.systems'),
       href: '/systems',
+      hasMenu: true,
+      menuType: 'systems' as const,
+    },
+    {
+      label: 'Tools',
+      href: '/configurator',
+      hasMenu: false,
     },
     {
       label: t('nav.specs'),
       href: '/specs',
+      hasMenu: false,
     },
     {
       label: t('nav.projects'),
       href: '/projects',
+      hasMenu: false,
     },
     {
       label: t('nav.about'),
       href: '/about',
+      hasMenu: false,
     },
   ]
 
@@ -83,16 +111,29 @@ export default function Navbar() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 + 0.3 }}
                 className="relative"
+                onMouseEnter={() => {
+                  if (item.hasMenu && item.menuType === 'products') setProductsMenuOpen(true)
+                  if (item.hasMenu && item.menuType === 'systems') setSystemsMenuOpen(true)
+                }}
+                onMouseLeave={() => {
+                  if (item.hasMenu && item.menuType === 'products') setProductsMenuOpen(false)
+                  if (item.hasMenu && item.menuType === 'systems') setSystemsMenuOpen(false)
+                }}
               >
                 <Link
                   href={item.href}
-                  className={`relative px-5 py-2.5 rounded-xl transition-all duration-300 group ${
+                  className={`relative px-5 py-2.5 rounded-xl transition-all duration-300 group flex items-center gap-1 ${
                     isActive(item.href)
                       ? 'text-accent bg-white/10 shadow-lg shadow-accent/20'
                       : 'text-white/90 hover:text-white hover:bg-white/5'
                   }`}
                 >
                   <span className="relative z-10 font-medium">{item.label}</span>
+                  {item.hasMenu && (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  )}
                   {isActive(item.href) && (
                     <motion.div
                       layoutId="activeNav"
@@ -105,6 +146,59 @@ export default function Navbar() {
                     <span className="absolute inset-0 rounded-xl bg-white/0 group-hover:bg-white/5 transition-colors duration-300" />
                   )}
                 </Link>
+
+                {/* Dropdown Menus */}
+                <AnimatePresence>
+                  {item.hasMenu && item.menuType === 'products' && productsMenuOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-full left-0 mt-2 w-72 glass-dark rounded-xl border border-white/10 shadow-xl overflow-hidden"
+                    >
+                      <div className="p-3">
+                        {productItems.map((product) => (
+                          <Link
+                            key={product.name}
+                            href={product.href}
+                            className="block px-4 py-3 rounded-lg hover:bg-white/10 transition-colors group"
+                          >
+                            <div className="font-medium text-white group-hover:text-accent transition-colors">
+                              {product.name}
+                            </div>
+                            <div className="text-xs text-white/60 mt-0.5">{product.desc}</div>
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {item.hasMenu && item.menuType === 'systems' && systemsMenuOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-full left-0 mt-2 w-72 glass-dark rounded-xl border border-white/10 shadow-xl overflow-hidden"
+                    >
+                      <div className="p-3">
+                        {systemItems.map((system) => (
+                          <Link
+                            key={system.name}
+                            href={system.href}
+                            className="block px-4 py-3 rounded-lg hover:bg-white/10 transition-colors group"
+                          >
+                            <div className="font-medium text-white group-hover:text-accent transition-colors">
+                              {system.name}
+                            </div>
+                            <div className="text-xs text-white/60 mt-0.5">{system.desc}</div>
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
             ))}
             <motion.div

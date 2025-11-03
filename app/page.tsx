@@ -7,7 +7,11 @@ import GlassShimmer from '@/components/GlassShimmer'
 import RefractionCard from '@/components/RefractionCard'
 import ParallaxGlass from '@/components/ParallaxGlass'
 import CausticsBackground from '@/components/CausticsBackground'
-import { glassFloat, fadeUp, hoverLift } from '@/lib/motionPresets'
+import ClientLogos from '@/components/sections/ClientLogos'
+import Testimonials from '@/components/sections/Testimonials'
+import CompanyStats from '@/components/sections/CompanyStats'
+import QualityCommitment from '@/components/sections/QualityCommitment'
+import { glassFloat, fadeUp } from '@/lib/motionPresets'
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
 import { useLanguage } from '@/lib/language'
@@ -16,21 +20,6 @@ import Link from 'next/link'
 
 export default function Home() {
   const { t, lang } = useLanguage()
-  
-  const heroDataURI = useMemo(() => {
-    const svg = encodeURIComponent(`
-      <svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'>
-        <defs>
-          <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
-            <stop offset='0%' stop-color='#0B1324'/>
-            <stop offset='100%' stop-color='#0A0F1A'/>
-          </linearGradient>
-        </defs>
-        <rect width='100%' height='100%' fill='url(#g)'/>
-      </svg>
-    `)
-    return `data:image/svg+xml;utf8,${svg}`
-  }, [])
 
   const kpis = useMemo(
     () => [
@@ -42,7 +31,7 @@ export default function Home() {
   )
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-ink via-primary to-ink">
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100">
       <Navbar />
       
       {/* Hero Section */}
@@ -124,38 +113,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Glass Shimmer Example Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid gap-6 md:grid-cols-3">
-            <motion.div {...glassFloat} transition={{ delay: 0.1 }}>
-              <GlassShimmer className="p-6">
-                <h3 className="text-lg font-semibold text-white">Low-E IGU (DGU)</h3>
-                <p className="text-white/80 mt-2">
-                  U-value 1.3 W/m²K · LT 68% · SHGC 0.34
-                </p>
-              </GlassShimmer>
-            </motion.div>
-            <motion.div {...glassFloat} transition={{ delay: 0.2 }}>
-              <GlassShimmer className="p-6">
-                <h3 className="text-lg font-semibold text-white">Tempered & Laminated</h3>
-                <p className="text-white/80 mt-2">
-                  EN/ASTM compliant safety glass for façades and barriers.
-                </p>
-              </GlassShimmer>
-            </motion.div>
-            <motion.div {...glassFloat} transition={{ delay: 0.3 }}>
-              <GlassShimmer className="p-6">
-                <h3 className="text-lg font-semibold text-white">
-                  Point-Fixed / Spider Systems
-                </h3>
-                <p className="text-white/80 mt-2">Minimal hardware, maximum transparency.</p>
-              </GlassShimmer>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Systems with Refraction */}
       <section>
         <div className="max-w-7xl mx-auto">
@@ -196,6 +153,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Client Logos */}
+      <ClientLogos />
+
+      {/* Company Stats */}
+      <CompanyStats />
+
       {/* Material Character */}
       <section className="relative">
         <CausticsBackground className="absolute inset-0 opacity-20" />
@@ -227,6 +190,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* Quality Commitment */}
+      <QualityCommitment />
 
       {/* CTA Section */}
       <section className="relative">

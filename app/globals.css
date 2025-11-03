@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 11, 16, 32; /* ink */
-  --background-end-rgb: 15, 18, 34; /* paper */
+  --foreground-rgb: 15, 23, 42; /* Dark slate for text */
+  --background-start-rgb: 248, 250, 252; /* Very light blue-gray */
+  --background-end-rgb: 241, 245, 249; /* Slightly darker light blue */
 }
 
 body {
@@ -50,19 +50,21 @@ section.pt-0 {
   }
 }
 
-/* Glassmorphism effect */
+/* Glassmorphism effect - Light Theme */
 .glass {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 .glass-dark {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 /* Focus states for accessibility */

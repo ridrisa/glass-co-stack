@@ -8,61 +8,61 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // GLAZE//PRO Brand Architecture - Enhanced System
+        // GLAZE//PRO Brand Architecture - Light Day Theme
         // Core Identity
-        ink: '#0A0F1A', // Deep space (primary backgrounds)
-        paper: '#0B1324', // Night sky (cards, secondary backgrounds)
-        accent: '#3B82F6', // Saudi blue (CTAs, links, primary actions)
+        ink: '#f8fafc', // Very light blue-gray (primary backgrounds)
+        paper: '#ffffff', // Pure white (cards, secondary backgrounds)
+        accent: '#2563eb', // Vibrant blue (CTAs, links, primary actions)
 
-        // Glass Signature Colors
+        // Glass Signature Colors - Light Theme
         glass: {
-          DEFAULT: 'rgba(255,255,255,0.06)', // Base glassmorphism
-          border: 'rgba(255,255,255,0.1)', // Subtle borders
-          shimmer: 'rgba(255,255,255,0.15)', // Hover states
-          clear: 'rgba(255,255,255,0.02)', // Ultra-light
-          blue: 'rgba(59,130,246,0.08)', // Low-E tint
-          green: 'rgba(16,185,129,0.08)', // Smart glass tint
-          bronze: 'rgba(245,158,11,0.08)', // Solar control tint
+          DEFAULT: 'rgba(255,255,255,0.8)', // Base glassmorphism
+          border: 'rgba(0,0,0,0.08)', // Subtle borders
+          shimmer: 'rgba(255,255,255,0.95)', // Hover states
+          clear: 'rgba(255,255,255,0.6)', // Ultra-light
+          blue: 'rgba(37,99,235,0.05)', // Low-E tint
+          green: 'rgba(16,185,129,0.05)', // Smart glass tint
+          bronze: 'rgba(245,158,11,0.05)', // Solar control tint
         },
 
-        // Border System
+        // Border System - Light Theme
         border: {
-          DEFAULT: '#1F2A44', // Standard borders
-          subtle: 'rgba(255,255,255,0.05)', // Ultra-subtle
-          medium: 'rgba(255,255,255,0.1)', // Standard glass
-          strong: 'rgba(255,255,255,0.2)', // Emphasized
+          DEFAULT: '#e2e8f0', // Standard borders
+          subtle: 'rgba(0,0,0,0.05)', // Ultra-subtle
+          medium: 'rgba(0,0,0,0.1)', // Standard glass
+          strong: 'rgba(0,0,0,0.15)', // Emphasized
         },
 
-        // Saudi-Optimized Palette (Vision 2030 Colors)
-        'saudi-green': '#10B981', // Palm oasis, sustainability
-        'desert-gold': '#F59E0B', // Traditional gold, luxury
-        'riyadh-blue': '#3B82F6', // Desert sky, innovation
+        // Saudi-Optimized Palette (Vision 2030 Colors) - Light Theme
+        'saudi-green': '#059669', // Palm oasis, sustainability (darker for visibility)
+        'desert-gold': '#d97706', // Traditional gold, luxury (darker)
+        'riyadh-blue': '#2563eb', // Desert sky, innovation
 
-        // Contextual Colors
-        success: '#10B981',
-        warning: '#F59E0B',
-        danger: '#EF4444',
-        info: '#3B82F6',
+        // Contextual Colors - Light Theme
+        success: '#059669',
+        warning: '#d97706',
+        danger: '#dc2626',
+        info: '#2563eb',
 
-        // Text Colors
+        // Text Colors - Light Theme
         text: {
-          primary: '#FFFFFF',
-          secondary: 'rgba(255,255,255,0.7)',
-          tertiary: 'rgba(255,255,255,0.5)',
+          primary: '#0f172a', // Very dark slate
+          secondary: '#475569', // Medium slate
+          tertiary: '#94a3b8', // Light slate
         },
 
-        // Legacy compatibility
-        primary: '#0B1324',
-        amber: '#F59E0B',
-        lime: '#10B981',
-        gold: '#F59E0B',
-        'glass-blue': '#1e3a8a',
-        'glass-light': '#3b82f6',
-        'glass-accent': '#3b82f6',
+        // Legacy compatibility - Light Theme
+        primary: '#ffffff',
+        amber: '#d97706',
+        lime: '#059669',
+        gold: '#d97706',
+        'glass-blue': '#dbeafe',
+        'glass-light': '#eff6ff',
+        'glass-accent': '#2563eb',
       },
       boxShadow: {
-        card: '0 10px 30px rgba(0,0,0,.25)',
-        nav: '0 6px 24px rgba(0,0,0,.22)',
+        card: '0 10px 30px rgba(0,0,0,0.08)',
+        nav: '0 4px 20px rgba(0,0,0,0.06)',
       },
       borderRadius: {
         xl: '1.25rem',
