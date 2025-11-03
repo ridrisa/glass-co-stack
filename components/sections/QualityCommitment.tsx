@@ -65,10 +65,10 @@ export default function QualityCommitment() {
     <section className="py-20 px-6 relative overflow-hidden bg-gradient-to-b from-transparent via-paper/30 to-transparent">
       <div className="max-w-7xl mx-auto">
         <motion.div {...fadeUp} className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-h1 md:text-display-sm font-bold text-white mb-4">
             {t('quality.title')}
           </h2>
-          <p className="text-slate-400 text-lg max-w-3xl mx-auto">
+          <p className="text-slate-400 text-body-lg max-w-3xl mx-auto">
             {t('quality.subtitle')}
           </p>
         </motion.div>
@@ -85,10 +85,10 @@ export default function QualityCommitment() {
             >
               <GlassShimmer className="p-6 h-full text-center hover:scale-105 transition-transform duration-300">
                 <div className="text-4xl mb-4">{standard.icon}</div>
-                <h3 className="text-lg font-semibold text-white mb-2">
+                <h3 className="text-body-lg font-semibold text-white mb-2">
                   {standard.title}
                 </h3>
-                <p className="text-sm text-slate-500">
+                <p className="text-body-sm text-slate-500">
                   {standard.description}
                 </p>
               </GlassShimmer>
@@ -130,7 +130,7 @@ export default function QualityCommitment() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <p className="text-sm text-slate-400 max-w-3xl mx-auto">
+          <p className="text-body-sm text-slate-400 max-w-3xl mx-auto">
             * {t('quality.disclaimer')}
           </p>
         </motion.div>

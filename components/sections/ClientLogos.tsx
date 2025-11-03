@@ -19,11 +19,11 @@ export default function ClientLogos() {
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-paper/50 to-transparent">
       <div className="max-w-7xl mx-auto">
-        <motion.div {...fadeUp} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <motion.div {...fadeUp} className="text-center mb-16">
+          <h2 className="text-h1 md:text-display-sm font-bold text-white mb-6">
             {t('clients.title')}
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-300 text-body-lg max-w-content mx-auto">
             {t('clients.subtitle')}
           </p>
         </motion.div>
@@ -36,10 +36,10 @@ export default function ClientLogos() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="flex items-center justify-center p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-slate-100 transition-all duration-300 group"
+              className="flex items-center justify-center p-4 rounded-xl glass-2 hover:glass-3 transition-all duration-300 group"
             >
-              <div className="relative h-12 w-full grayscale group-hover:grayscale-0 opacity-60 group-hover:opacity-100 transition-all duration-300">
-                <span className="text-slate-400 group-hover:text-white text-sm font-semibold text-center block">
+              <div className="relative h-12 w-full transition-all duration-300">
+                <span className="text-slate-400 group-hover:text-white text-body-sm font-semibold text-center block transition-colors duration-300">
                   {client.name}
                 </span>
               </div>
@@ -56,7 +56,7 @@ export default function ClientLogos() {
         >
           <div className="flex items-center gap-2 px-6 py-3 rounded-full bg-saudi-green/10 border border-saudi-green/30">
             <span className="text-2xl font-bold">//</span>
-            <span className="text-sm font-semibold">{t('clients.vision2030')}</span>
+            <span className="text-body-sm font-semibold">{t('clients.vision2030')}</span>
           </div>
         </motion.div>
       </div>

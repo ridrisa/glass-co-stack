@@ -54,10 +54,10 @@ export default function CompanyStats() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div {...fadeUp} className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-h1 md:text-display-sm font-bold text-white mb-4">
             {t('stats.title')}
           </h2>
-          <p className="text-slate-400 text-lg max-w-3xl mx-auto">
+          <p className="text-slate-400 text-body-lg max-w-3xl mx-auto">
             {t('stats.subtitle')}
           </p>
         </motion.div>
@@ -80,7 +80,7 @@ export default function CompanyStats() {
                   <div className="text-xl font-semibold text-white mb-2">
                     {stat.label}
                   </div>
-                  <div className="text-sm text-slate-500">
+                  <div className="text-body-sm text-slate-500">
                     {stat.subtext}
                   </div>
                 </div>
@@ -96,7 +96,7 @@ export default function CompanyStats() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="flex flex-wrap justify-center gap-6 text-slate-400 text-sm">
+          <div className="flex flex-wrap justify-center gap-6 text-slate-400 text-body-sm">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-saudi-green rounded-full"></span>
               <span>Vision 2030 Partner</span>

@@ -21,10 +21,10 @@ export default function ConfiguratorPage() {
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div {...fadeUp}>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-display-sm md:text-display-md font-bold text-white mb-6">
               {t('configurator.title')}
             </h1>
-            <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-8">
+            <p className="text-body-xl text-slate-300 max-w-prose mx-auto mb-8">
               {t('configurator.subtitle')}
             </p>
           </motion.div>
@@ -67,32 +67,32 @@ export default function ConfiguratorPage() {
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-              <div className="text-3xl mb-3">⚡</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Instant Results</h3>
-              <p className="text-sm text-slate-500">
+            <div className="glass-2 p-6 rounded-xl">
+              <div className="text-4xl mb-3">⚡</div>
+              <h3 className="text-h4 font-semibold text-white mb-2">Instant Results</h3>
+              <p className="text-body-sm text-slate-400">
                 Get immediate feedback on your glass configuration with real-time calculations
               </p>
             </div>
-            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-              <div className="text-3xl mb-3">📊</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Technical Data</h3>
-              <p className="text-sm text-slate-500">
+            <div className="glass-2 p-6 rounded-xl">
+              <div className="text-4xl mb-3">📊</div>
+              <h3 className="text-h4 font-semibold text-white mb-2">Technical Data</h3>
+              <p className="text-body-sm text-slate-400">
                 Access indicative U-values, SHGC, light transmission, and weight calculations
               </p>
             </div>
-            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-              <div className="text-3xl mb-3">🎯</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Project Planning</h3>
-              <p className="text-sm text-slate-500">
+            <div className="glass-2 p-6 rounded-xl">
+              <div className="text-4xl mb-3">🎯</div>
+              <h3 className="text-h4 font-semibold text-white mb-2">Project Planning</h3>
+              <p className="text-body-sm text-slate-400">
                 Perfect for early-stage planning and budget estimation for your project
               </p>
             </div>
           </div>
 
-          <div className="mt-8 p-6 rounded-xl bg-saudi-green/10 border border-saudi-green/30">
-            <h4 className="font-semibold text-white mb-2">Need Precise Specifications?</h4>
-            <p className="text-sm text-slate-400 mb-4">
+          <div className="mt-8 glass-3 p-6 rounded-xl border border-saudi-green/30">
+            <h4 className="text-h4 font-semibold text-white mb-3">Need Precise Specifications?</h4>
+            <p className="text-body text-slate-300 mb-4">
               These tools provide indicative values for planning purposes. For project-specific
               engineering calculations, detailed specifications, and certified test reports,
               contact our technical team.

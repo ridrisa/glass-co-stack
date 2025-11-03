@@ -86,11 +86,11 @@ export default function CaseStudiesPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <motion.div {...fadeUp} className="text-center mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <motion.div {...fadeUp} className="text-center mb-12">
+            <h1 className="text-display-sm md:text-display-md font-bold text-white mb-8">
               {t('caseStudies.title')}
             </h1>
-            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+            <p className="text-body-xl text-slate-300 max-w-prose mx-auto">
               {t('caseStudies.subtitle')}
             </p>
           </motion.div>
@@ -120,10 +120,10 @@ export default function CaseStudiesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-h1 md:text-display-sm font-bold text-white mb-8">
               {t('caseStudies.cta')}
             </h2>
-            <p className="text-lg text-slate-400 mb-8">
+            <p className="text-body-lg text-slate-300 max-w-content mx-auto mb-10">
               {t('caseStudies.ctaDesc')}
             </p>
             <a

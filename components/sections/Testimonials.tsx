@@ -60,10 +60,10 @@ export default function Testimonials() {
 
       <div className="max-w-5xl mx-auto relative z-10">
         <motion.div {...fadeUp} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-h1 md:text-display-sm font-bold text-white mb-4">
             {t('testimonials.title')}
           </h2>
-          <p className="text-slate-400 text-lg">
+          <p className="text-slate-400 text-body-lg">
             {t('testimonials.subtitle')}
           </p>
         </motion.div>
@@ -99,13 +99,13 @@ export default function Testimonials() {
 
                 {/* Author */}
                 <div className="text-center">
-                  <p className="text-white font-semibold text-lg">
+                  <p className="text-white font-semibold text-body-lg">
                     {testimonials[activeIndex].author}
                   </p>
-                  <p className="text-accent text-sm font-medium">
+                  <p className="text-accent text-body-sm font-medium">
                     {testimonials[activeIndex].role}
                   </p>
-                  <p className="text-slate-500 text-sm mt-1">
+                  <p className="text-slate-500 text-body-sm mt-1">
                     {testimonials[activeIndex].company}
                   </p>
                 </div>

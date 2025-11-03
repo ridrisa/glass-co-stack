@@ -45,7 +45,7 @@ export default function CaseStudyCard({
               alt={title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-accent text-white text-sm font-semibold">
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-accent text-white text-body-sm font-semibold">
               {year}
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function CaseStudyCard({
           {/* Content */}
           <div className="p-6">
             <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-            <div className="flex items-center gap-2 text-slate-500 text-sm mb-4">
+            <div className="flex items-center gap-2 text-slate-500 text-body-sm mb-4">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -75,16 +75,16 @@ export default function CaseStudyCard({
             <div className="space-y-3">
               <div>
                 <div className="text-xs text-accent font-semibold mb-1">Challenge</div>
-                <p className="text-sm text-slate-400 line-clamp-2">{challenge}</p>
+                <p className="text-body-sm text-slate-400 line-clamp-2">{challenge}</p>
               </div>
               <div>
                 <div className="text-xs text-accent font-semibold mb-1">Solution</div>
-                <p className="text-sm text-slate-400 line-clamp-2">{solution}</p>
+                <p className="text-body-sm text-slate-400 line-clamp-2">{solution}</p>
               </div>
             </div>
 
             <div className="mt-4 pt-4 border-t border-slate-200">
-              <span className="text-accent text-sm font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              <span className="text-accent text-body-sm font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                 Read Full Case Study
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
